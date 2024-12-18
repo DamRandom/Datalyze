@@ -9,6 +9,7 @@
     "/(page)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/(page)/page.css",
       "static/chunks/app/(page)/page.js"
     ]
   }

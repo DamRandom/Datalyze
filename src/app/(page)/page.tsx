@@ -2,6 +2,7 @@
 
 import NavBar from "@/components/ui/NavBar";
 import UploadSection from "@/components/grid/UploadSection";
+import HowItWorksSection from "@/components/grid/HowItWorksSection"; // Importa la nueva sección
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       {/* Main Section */}
       <main className="pt-0">
         <UploadSection />
+        <HowItWorksSection /> {/* Aquí agregamos la nueva sección */}
       </main>
     </div>
   );
