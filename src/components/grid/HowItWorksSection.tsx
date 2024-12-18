@@ -5,17 +5,17 @@ import 'aos/dist/aos.css';
 
 const steps = [
   {
-    title: 'Análisis de los datos',
+    title: 'Análisis de los Datos',
     description: `En esta etapa, se recolectan, limpian y analizan los datos históricos para entender patrones y tendencias que afectan el desempeño de los modelos predictivos. Esta fase es crucial porque garantiza que los datos sean de alta calidad, sin sesgos y adecuados para las pruebas posteriores. Se utilizan herramientas estadísticas avanzadas para interpretar la información.`,
     image: '/images/pexels-goumbik-669610.jpg',
   },
   {
-    title: 'Identificación de diferencias',
+    title: 'Identificación de Diferencias',
     description: `En esta fase se aplica el Test de Friedman, un análisis estadístico que permite determinar si existen diferencias significativas en el desempeño de diferentes modelos predictivos. Esta prueba es vital para validar que los resultados obtenidos no son simplemente fruto del azar y que los modelos son realmente distintos en términos de su capacidad predictiva.`,
     image: '/images/digital-marketing-1433427.jpg',
   },
   {
-    title: 'Comparaciones detalladas',
+    title: 'Comparaciones Detalladas',
     description: `Luego de identificar las diferencias significativas, se realiza una prueba post-hoc para realizar comparaciones específicas entre pares de modelos. Esta prueba permite profundizar en las interacciones y determinar qué modelos presentan diferencias reales y no aleatorias, ayudando en la toma de decisiones sobre qué modelos adoptar en el futuro.`,
     image: '/images/pexels-fauxels-3184292.jpg',
   },
@@ -31,7 +31,7 @@ const HowItWorksSection = () => {
 
   return (
     <div className="relative flex flex-col bg-gray-50 p-12">
-      <h2 className="text-4xl font-semibold text-gray-800 text-center mb-16">¿Cómo funciona?</h2>
+      <h2 className="text-4xl font-semibold text-gray-800 text-center mb-16">¿Cómo Funciona?</h2>
 
       {/* Steps */}
       <div className="flex flex-col w-full space-y-32">

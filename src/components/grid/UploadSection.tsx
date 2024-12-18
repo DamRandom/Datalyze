@@ -50,7 +50,7 @@ const UploadSection = () => {
           data-aos="fade-right" // Animación para el lado izquierdo
           data-aos-duration="1000"
         >
-          <h1 className="text-4xl font-semibold text-[#1E293B] mb-4">Organiza tu claustro</h1>
+          <h1 className="text-4xl font-semibold text-[#1E293B] mb-4">Organiza tu Claustro</h1>
           <p className="text-lg text-[#475569] mb-6">
             Sube tu conjunto de datos para comenzar a aprovechar la IA en la gestión inteligente del claustro y obtener mejores análisis.
           </p>
