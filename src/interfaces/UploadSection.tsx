@@ -10,7 +10,7 @@ const UploadSection = () => {
   const [file, setFile] = useState<File | null>(null);
 
   useEffect(() => {
-    AOS.init(); // Inicializar AOS en el cliente
+    AOS.init(); // Initialize AOS on client-side
   }, []);
 
   const handleDragOver = (e: React.DragEvent) => {
@@ -47,24 +47,24 @@ const UploadSection = () => {
         {/* Left: Title, text, and upload area */}
         <div
           className="md:w-1/2 text-center md:text-left mb-8 md:mb-0"
-          data-aos="fade-right" // Animación para el lado izquierdo
+          data-aos="fade-right"
           data-aos-duration="1000"
         >
-          <h1 className="text-4xl font-semibold text-[#1E293B] mb-4">Organiza tu Claustro</h1>
+          <h1 className="text-4xl font-semibold text-[#1E293B] mb-4">Organize Your Teachers</h1>
           <p className="text-lg text-[#475569] mb-6">
-            Sube tu conjunto de datos para comenzar a aprovechar la IA en la gestión inteligente del claustro y obtener mejores análisis.
+            Upload your dataset to start leveraging AI for intelligent teacher staff management and gain better insights.
           </p>
           <div
             className={`border-2 border-dashed rounded-lg p-6 bg-[#FFFFFF] text-center transition-all duration-300 relative ${isDragging ? 'border-[#2563EB] bg-[#DBEAFE]' : 'border-[#9CA3AF]'}`}
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}
             onDrop={handleDrop}
-            data-aos="zoom-in" // Animación de zoom al área de carga
+            data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-delay="500"
           >
-            <p className="text-[#475569] mb-2">{file ? `Archivo listo para subir: ${file.name}` : 'Arrastra tu conjunto de datos aquí'}</p>
-            <p className="text-sm text-[#9CA3AF]">Formatos aceptados: CSV, Excel, JSON</p>
+            <p className="text-[#475569] mb-2">{file ? `File ready to upload: ${file.name}` : 'Drag your dataset here'}</p>
+            <p className="text-sm text-[#9CA3AF]">Accepted formats: CSV, Excel, JSON</p>
             <input
               type="file"
               onChange={handleFileInputChange}
@@ -72,7 +72,7 @@ const UploadSection = () => {
               id="file-upload"
             />
             <label htmlFor="file-upload" className="mt-4 inline-block cursor-pointer py-2 px-4 bg-[#a1acaf] text-[#FFFFFF] rounded-lg hover:bg-[#777f81]">
-              Seleccionar archivo
+              Select File
             </label>
             {isDragging && (
               <div className="absolute inset-0 bg-[#000000] bg-opacity-30 pointer-events-none rounded-lg"></div>
@@ -83,12 +83,12 @@ const UploadSection = () => {
         {/* Right: Image */}
         <div
           className="md:w-1/2 flex justify-center"
-          data-aos="fade-left" // Animación para el lado derecho
+          data-aos="fade-left"
           data-aos-duration="1000"
         >
           <Image
             src="/images/analytics-3291738.jpg"
-            alt="Ilustración de organización del claustro con IA"
+            alt="Illustration of faculty organization with AI"
             width={500}
             height={400}
             className="rounded-lg shadow-lg"

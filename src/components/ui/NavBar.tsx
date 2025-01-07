@@ -14,13 +14,13 @@ const NavBar = () => {
         {/* Navigation Links */}
         <div className="space-x-6">
           <Link href="/" className="hover:text-[#93C5FD]">
-            Inicio
+            Home
           </Link>
           <Link href="/about" className="hover:text-[#93C5FD]">
-            Sobre Nosotros
+            About Us
           </Link>
           <Link href="/contact" className="hover:text-[#93C5FD]">
-            Contacto
+            Contact
           </Link>
         </div>
       </div>

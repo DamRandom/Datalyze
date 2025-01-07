@@ -1,9 +1,9 @@
 "use client";
 
 import NavBar from "@/components/ui/NavBar";
-import UploadSection from "@/components/grid/UploadSection";
-import HowItWorksSection from "@/components/grid/HowItWorksSection";
-import AlgorithmSection from "@/components/grid/AlgorithmSection"; // Importa la nueva sección
+import UploadSection from "@/interfaces/UploadSection";
+import HowItWorksSection from "@/interfaces/HowItWorksSection";
+import AlgorithmSection from "@/interfaces/AlgorithmSection";
 
 export default function HomePage() {
   return (
@@ -11,11 +11,11 @@ export default function HomePage() {
       {/* Navigation Bar */}
       <NavBar />
 
-      {/* Main Section */}
+      {/* Main Content */}
       <main className="pt-0">
         <UploadSection />
         <HowItWorksSection />
-        <AlgorithmSection /> {/* Aquí agregamos la nueva sección */}
+        <AlgorithmSection />
       </main>
     </div>
   );

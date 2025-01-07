@@ -1,34 +1,33 @@
-// components/grid/AlgorithmSection.tsx
 import React, { useEffect } from 'react';
-import AlgorithmCard from '../ui/AlgorithmCard';
+import AlgorithmCard from '../components/ui/AlgorithmCard';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // Importa AOS
+import 'aos/dist/aos.css';
 
 const algorithms = [
   {
     title: 'AutoARIMA',
     subtitle: '', 
-    description: 'Analiza datos históricos para encontrar patrones y hacer predicciones sobre el futuro.',
+    description: 'Analyzes historical data to find patterns and make future predictions.',
   },
   {
     title: 'LSTM',
     subtitle: 'Long Short-Term Memory',
-    description: 'Redes neuronales que recuerdan información durante largo tiempo para predecir secuencias complejas.',
+    description: 'Neural networks that retain information for long periods to predict complex sequences.',
   },
   {
     title: 'CNN',
     subtitle: 'Convolutional Neural Network',
-    description: 'Especializadas en identificar patrones dentro de los datos, como imágenes o secuencias.',
+    description: 'Specialized in identifying patterns within data, such as images or sequences.',
   },
   {
     title: 'AutoEncoders',
     subtitle: '', 
-    description: 'Aprenden a comprimir y reconstruir datos, ayudando a identificar patrones importantes.',
+    description: 'Learn to compress and reconstruct data, helping to identify key patterns.',
   },
 ];
 
 const AlgorithmSection = () => {
-  // Inicializa AOS al montar el componente
+  // Initialize AOS on component mount
   useEffect(() => {
     AOS.init();
   }, []);
@@ -37,18 +36,18 @@ const AlgorithmSection = () => {
     <section className="min-h-screen py-12 bg-[#e4e4e4]">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-semibold text-[#1E293B] mb-8" data-aos="fade-up" data-aos-duration="1000">
-          Algoritmos Usados
+          Algorithms Used
         </h2>
         <p className="text-lg text-[#475569] mb-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-          Aquí encontrarás los algoritmos aplicados para la predicción del claustro docente. Cada uno tiene un enfoque único para el análisis de datos.
+          Discover the algorithms applied for faculty prediction. Each has a unique approach to data analysis.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {algorithms.map((algorithm, index) => (
             <div
               key={index}
-              data-aos="fade-up" // Animación para cada tarjeta
+              data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay={index * 200} // Añadimos retraso en función del índice
+              data-aos-delay={index * 200}
             >
               <AlgorithmCard
                 title={algorithm.title}
