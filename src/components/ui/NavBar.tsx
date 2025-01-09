@@ -9,7 +9,7 @@ const NavBar: React.FC<NavBarProps> = ({ sections }) => {
     <nav className="fixed top-0 left-0 w-full bg-[#1E293B] text-white shadow-md z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <a href="/home" className="text-2xl font-bold text-[#DBEAFE]">
+        <a href="" className="text-2xl font-bold text-[#DBEAFE]">
           ForecEdu
         </a>
 

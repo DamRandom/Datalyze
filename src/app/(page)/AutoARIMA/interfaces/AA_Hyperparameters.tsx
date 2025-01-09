@@ -10,7 +10,7 @@ const Hyperparameters = () => {
   }, []);
 
   return (
-    <section className="bg-[#f9fafa] py-16 px-8">
+    <section className="bg-[#e4e4e4] py-16 px-8">
       <div className="container mx-auto">
         {/* Header */}
         <header className="text-center mb-12">

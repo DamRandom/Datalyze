@@ -15,7 +15,7 @@ const algorithms = [
     subtitle: 'Long Short-Term Memory',
     description: 'Neural networks that retain information for long periods to predict complex sequences.',
     details: 'LSTM networks are particularly effective for sequence prediction tasks, such as time series or text generation in academic contexts.',
-    link: '#', // No se especifica un enlace para LSTM aún
+    link: '/LSTM', // No se especifica un enlace para LSTM aún
   },
   {
     title: 'CNN',

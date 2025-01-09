@@ -19,7 +19,6 @@ const AutoARIMA = () => {
 
   return (
     <section className="min-h-screen bg-[#f9fafb]">
-      <div className="container mx-auto px-6 lg:px-12">
         {/* Navigation Bar */}
         <NavBar sections={sections} />
 
@@ -36,8 +35,8 @@ const AutoARIMA = () => {
         <section id="predictions">
           <AA_Predictions />
         </section>
-      </div>
-      {/* Footer outside the container to take full width */}
+
+      {/* Footer spans full width */}
       <Footer />
     </section>
   );

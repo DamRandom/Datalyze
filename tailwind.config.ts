@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1E293B", // Azul oscuro para navegación y títulos
-        secondary: "#2563EB", // Azul brillante para botones y destacados
-        background: "#F8FAFC", // Fondo gris claro
-        accent: "#DBEAFE", // Azul pastel para toques decorativos
+        primary: "#1E293B", 
+        secondary: "#2563EB", 
+        background: "#F8FAFC", 
+        accent: "#DBEAFE", 
       },
     },
   },

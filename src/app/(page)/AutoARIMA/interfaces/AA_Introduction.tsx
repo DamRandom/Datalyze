@@ -7,14 +7,14 @@ import "aos/dist/aos.css";
 const Introduction = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      easing: "ease-in-out", // Smooth animation effect
-      once: true, // Trigger animation only once
+      duration: 1000, 
+      easing: "ease-in-out", 
+      once: true, 
     });
   }, []);
 
   return (
-    <div className="relative flex flex-col bg-gray-50 py-16 px-12 mt-16"> {/* Agregado mt-16 para margen superior */}
+    <div className="relative flex flex-col bg-[#e4e4e4] py-16 px-12 mt-16"> 
       <div className="container mx-auto">
         {/* Heading */}
         <header className="text-center mb-12" data-aos="fade-up" data-aos-delay="100">

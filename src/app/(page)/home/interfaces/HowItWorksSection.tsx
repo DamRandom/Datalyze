@@ -24,14 +24,14 @@ const steps = [
 const HowItWorksSection = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // Animation duration
-      once: true,      // Animation triggers only once
+      duration: 1000,  
+      once: true,      
     });
   }, []);
 
   return (
-    <div className="relative flex flex-col bg-gray-50 p-12">
-      <h2 className="text-4xl font-semibold text-gray-800 text-center mb-16">How It Works</h2>
+    <div className="relative flex flex-col bg-[#f9fafb] p-12">
+      <h2 className="text-4xl font-semibold text-[#2d3748] text-center mb-16">How It Works</h2> 
 
       {/* Steps */}
       <div className="flex flex-col w-full space-y-16">
@@ -44,8 +44,8 @@ const HowItWorksSection = () => {
           >
             {/* Step Description */}
             <div className="flex flex-col md:w-1/2 text-justify px-6 md:px-8">
-              <div className="text-2xl font-semibold text-gray-800 mb-4 text-center md:text-left">{step.title}</div>
-              <p className="text-lg text-gray-600 leading-relaxed">{step.description}</p>
+              <div className="text-2xl font-semibold text-[#2d3748] mb-4 text-center md:text-left">{step.title}</div>
+              <p className="text-lg text-[#718096] leading-relaxed">{step.description}</p>
             </div>
 
             {/* Image */}
