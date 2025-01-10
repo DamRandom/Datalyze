@@ -10,7 +10,7 @@ const NavBar: React.FC<NavBarProps> = ({ sections }) => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <a href="" className="text-2xl font-bold text-[#DBEAFE]">
-          ForecEdu
+        Datalyze
         </a>
 
         {/* Navigation Links */}

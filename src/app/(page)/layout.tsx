@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "ForecEdu - Empowering Predictive Insights",
+  title: "Datalyze - Empowering Predictive Insights",
   description:
-    "ForecEdu is a cutting-edge platform leveraging AI and statistical tools to optimize faculty composition and educational strategies.",
+    "Datalyze is a cutting-edge platform leveraging AI and statistical tools to optimize faculty composition and educational strategies.",
 };
 
 export default function RootLayout({

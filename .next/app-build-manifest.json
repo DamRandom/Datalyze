@@ -12,29 +12,16 @@
       "static/css/app/(page)/page.css",
       "static/chunks/app/(page)/page.js"
     ],
-    "/(page)/AutoARIMA/layout": [
+    "/(page)/algorithms/cnn/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(page)/AutoARIMA/layout.css",
-      "static/chunks/app/(page)/AutoARIMA/layout.js"
+      "static/chunks/app/(page)/algorithms/cnn/layout.js"
     ],
-    "/(page)/AutoARIMA/page": [
+    "/(page)/algorithms/cnn/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(page)/AutoARIMA/page.css",
-      "static/chunks/app/(page)/AutoARIMA/page.js"
-    ],
-    "/(page)/LSTM/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(page)/LSTM/layout.css",
-      "static/chunks/app/(page)/LSTM/layout.js"
-    ],
-    "/(page)/LSTM/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(page)/LSTM/page.css",
-      "static/chunks/app/(page)/LSTM/page.js"
+      "static/css/app/(page)/algorithms/cnn/page.css",
+      "static/chunks/app/(page)/algorithms/cnn/page.js"
     ]
   }
 }

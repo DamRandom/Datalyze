@@ -22,7 +22,7 @@ const algorithms = [
     subtitle: 'Convolutional Neural Network',
     description: 'Specialized in identifying patterns within data, such as images or sequences.',
     details: 'CNNs excel at feature extraction, making them suitable for analyzing structured academic datasets.',
-    link: '#', // No se especifica un enlace para CNN aún
+    link: '/algorithms/cnn', // No se especifica un enlace para CNN aún
   },
   {
     title: 'AutoEncoders',
