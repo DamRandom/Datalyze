@@ -7,12 +7,15 @@ import AutoARIMAIntroduction from "./components/AutoARIMAIntroduction";
 import AutoARIMAFormula from "./components/ARIMAFormula";
 import AutoARIMAHyperparameters from "./components/AutoARIMAHyperparameters";
 import ARIMAModelFitting from "./components/ARIMAModelFitting";
+import ARIMAMetrics from "./components/ARIMAMetrics";
 
 const CNNPage: React.FC = () => {
     const sections = [
         { id: "introduction", label: "Introduction" },
         { id: "formula", label: "Formula" },
         { id: "hyperparameters", label: "Hyperparameters" },
+        { id: "modelfitting", label: "Model Fitting" },
+        { id: "metrics", label: "Metrics" },
     ];
 
     return (
@@ -31,8 +34,11 @@ const CNNPage: React.FC = () => {
                 <section id="hyperparameters">
                 <AutoARIMAHyperparameters/>
                 </section>
-                <section>
+                <section id="modelfitting">
                     <ARIMAModelFitting/>
+                </section>
+                <section id="metrics">
+                    <ARIMAMetrics/>
                 </section>
                 <Footer />
             </main>
