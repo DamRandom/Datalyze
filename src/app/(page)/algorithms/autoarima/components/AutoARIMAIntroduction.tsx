@@ -8,9 +8,9 @@ import "aos/dist/aos.css";
 export default function AutoARIMAIntroduction() {
   useEffect(() => {
     AOS.init({
-      duration: 800, 
-      delay: 200,    
-      once: true, 
+      duration: 800,
+      delay: 200,
+      once: true,
     });
   }, []);
 
@@ -43,10 +43,10 @@ export default function AutoARIMAIntroduction() {
         </div>
 
         {/* Image with Margins inside a Card */}
-        <div className="bg-white shadow-xl rounded-lg p-8 mb-6" data-aos="fade-up" data-aos-delay="1000">
+        <div className="bg-white shadow-xl rounded-lg p-8 mb-6">
           <div className="flex justify-center mb-4">
             <Image
-              src="/images/arima_model.png"
+              src="/images/AutoARIMA/time_series 3.png"
               alt="ARIMA Model Representation"
               width={900}
               height={450}

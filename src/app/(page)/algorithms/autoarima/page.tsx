@@ -4,32 +4,36 @@ import React from "react";
 import NavBar from "@/components/common/NavBar";
 import Footer from "@/components/common/Footer";
 import AutoARIMAIntroduction from "./components/AutoARIMAIntroduction";
+import AutoARIMAFormulaSection from "./components/ARIMAFormulaSection";
+import AutoARIMAHyperparametersSection from "./components/AutoARIMAHyperparametersSection";
 
 const CNNPage: React.FC = () => {
-  const sections = [
-    { id: "introduction", label: "Introduction" },
-    { id: "how-works", label: "How It Works" },
-    { id: "training", label: "Training" },
-    { id: "evaluation", label: "Evaluation" },
-    { id: "architectures", label: "Architectures" },
-    { id: "applications", label: "Applications" },
-    { id: "advantages-disadvantages", label: "Advantages & Disadvantages" },
-  ];
+    const sections = [
+        { id: "introduction", label: "Introduction" },
+        { id: "formula", label: "Formula" },
+        { id: "hyperparameters", label: "Hyperparameters" },
+    ];
 
-  return (
-    <div className="bg-[#f8f9fa] text-[#333] min-h-screen">
-      {/* Header */}
-      <NavBar sections={sections} />
+    return (
+        <div className="bg-[#f8f9fa] text-[#333] min-h-screen">
+            {/* Header */}
+            <NavBar sections={sections} />
 
-      {/* Main Content */}
-      <main className="pt-16"> {/* Ajuste para evitar que el contenido quede tapado por el header */}
-        <section id="introduction">
-          <AutoARIMAIntroduction />
-        </section>
-        <Footer />
-      </main>
-    </div>
-  );
+            {/* Main Content */}
+            <main className="pt-16">
+                <section id="introduction">
+                    <AutoARIMAIntroduction />
+                </section>
+                <section id="formula">
+                    <AutoARIMAFormulaSection />
+                </section>
+                <section id="hyperparameters">
+                <AutoARIMAHyperparametersSection/>
+                </section>
+                <Footer />
+            </main>
+        </div>
+    );
 };
 
 export default CNNPage;
