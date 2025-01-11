@@ -4,8 +4,9 @@ import React from "react";
 import NavBar from "@/components/common/NavBar";
 import Footer from "@/components/common/Footer";
 import AutoARIMAIntroduction from "./components/AutoARIMAIntroduction";
-import AutoARIMAFormulaSection from "./components/ARIMAFormulaSection";
-import AutoARIMAHyperparametersSection from "./components/AutoARIMAHyperparametersSection";
+import AutoARIMAFormula from "./components/ARIMAFormula";
+import AutoARIMAHyperparameters from "./components/AutoARIMAHyperparameters";
+import ARIMAModelFitting from "./components/ARIMAModelFitting";
 
 const CNNPage: React.FC = () => {
     const sections = [
@@ -22,13 +23,16 @@ const CNNPage: React.FC = () => {
             {/* Main Content */}
             <main className="pt-16">
                 <section id="introduction">
-                    <AutoARIMAIntroduction />
+                    <AutoARIMAIntroduction/>
                 </section>
                 <section id="formula">
-                    <AutoARIMAFormulaSection />
+                    <AutoARIMAFormula/>
                 </section>
                 <section id="hyperparameters">
-                <AutoARIMAHyperparametersSection/>
+                <AutoARIMAHyperparameters/>
+                </section>
+                <section>
+                    <ARIMAModelFitting/>
                 </section>
                 <Footer />
             </main>
