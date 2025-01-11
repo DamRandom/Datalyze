@@ -8,14 +8,17 @@ import AutoARIMAFormula from "./components/ARIMAFormula";
 import AutoARIMAHyperparameters from "./components/AutoARIMAHyperparameters";
 import ARIMAModelFitting from "./components/ARIMAModelFitting";
 import ARIMAMetrics from "./components/ARIMAMetrics";
+import ModelPredictionOutput from "./components/ModelPredictionOutput";
+import AdditionalConsiderations from "./components/AdditionalConsiderations";
 
 const CNNPage: React.FC = () => {
     const sections = [
         { id: "introduction", label: "Introduction" },
-        { id: "formula", label: "Formula" },
         { id: "hyperparameters", label: "Hyperparameters" },
         { id: "modelfitting", label: "Model Fitting" },
         { id: "metrics", label: "Metrics" },
+        { id: "prediction", label: "ModelPredictionOutput" },
+        { id: "considerations", label: "Additional Considerations" },
     ];
 
     return (
@@ -26,19 +29,25 @@ const CNNPage: React.FC = () => {
             {/* Main Content */}
             <main className="pt-16">
                 <section id="introduction">
-                    <AutoARIMAIntroduction/>
+                    <AutoARIMAIntroduction />
                 </section>
                 <section id="formula">
-                    <AutoARIMAFormula/>
+                    <AutoARIMAFormula />
                 </section>
                 <section id="hyperparameters">
-                <AutoARIMAHyperparameters/>
+                    <AutoARIMAHyperparameters />
                 </section>
                 <section id="modelfitting">
-                    <ARIMAModelFitting/>
+                    <ARIMAModelFitting />
                 </section>
                 <section id="metrics">
-                    <ARIMAMetrics/>
+                    <ARIMAMetrics />
+                </section>
+                <section id="prediction">
+                    <ModelPredictionOutput />
+                </section>
+                <section id="considerations">
+                    <AdditionalConsiderations />
                 </section>
                 <Footer />
             </main>
