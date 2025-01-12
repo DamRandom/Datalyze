@@ -51,7 +51,7 @@ export default function LSTMSection() {
         <div className="bg-white shadow-xl rounded-lg p-8 mb-6">
           <div className="flex justify-center mb-4">
             <Image
-              src="/images/lstm_diagram.webp" // Replace with the actual image path
+              src="/images/LSTM/LSTMcell.webp" // Replace with the actual image path
               alt="LSTM Architecture"
               width={900}
               height={450}
@@ -64,12 +64,12 @@ export default function LSTMSection() {
         <div className="text-sm text-center text-[#555] mb-8" data-aos="fade-up" data-aos-delay="1400">
           <span className="font-semibold text-[#333]">Source: </span>
           <a
-            href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/"
+            href="https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800"
           >
-            Colah&apos;s Blog
+            Illustrated Guide to LSTM&apost;s and GRU&apost;s: A step by step explanation
           </a>
         </div>
 
