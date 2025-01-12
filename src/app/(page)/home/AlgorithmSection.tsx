@@ -8,14 +8,14 @@ const algorithms = [
     subtitle: '‎ ',
     description: 'Analyzes historical data to find patterns and make future predictions.',
     details: 'AutoARIMA automatically determines the best parameters for ARIMA, optimizing forecasts for academic department data.',
-    link: '//algorithms/autoarima', 
+    link: '/algorithms/autoarima', 
   },
   {
     title: 'LSTM',
     subtitle: 'Long Short-Term Memory',
     description: 'Neural networks that retain information for long periods to predict complex sequences.',
     details: 'LSTM networks are particularly effective for sequence prediction tasks, such as time series or text generation in academic contexts.',
-    link: '//algorithms/lstm', 
+    link: '/algorithms/lstm', 
   },
   {
     title: 'CNN',
