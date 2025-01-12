@@ -1,93 +1,130 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { Line } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
+import { useEffect } from "react";
+import { Line, Bar } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import "tailwindcss/tailwind.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-// Registrar los componentes de Chart.js
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
+// Registrar los componentes necesarios de Chart.js
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
-const exampleData = {
-  labels: ['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+// Datos procesados del dataset
+const dataset = [
+  { V1: 2011, V2: 1, V3: 41, V4: 102, V5: 641, V6: 1014, V7: 1798, V8: 37, V9: 99, V10: 583, V11: 923, V12: 1642 },
+  { V1: 2011, V2: 2, V3: 37, V4: 99, V5: 583, V6: 923, V7: 1642, V8: 33, V9: 96, V10: 521, V11: 709, V12: 1359 },
+  { V1: 2012, V2: 1, V3: 33, V4: 96, V5: 521, V6: 709, V7: 1359, V8: 31, V9: 96, V10: 498, V11: 525, V12: 1150 },
+  { V1: 2012, V2: 2, V3: 31, V4: 96, V5: 498, V6: 525, V7: 1150, V8: 30, V9: 94, V10: 488, V11: 482, V12: 1094 },
+];
+
+// Prepara los datos para las gráficas
+const lineChartData = {
   datasets: [
     {
-      label: 'Current Total',
-      data: [200, 205, 210, 215, 220, 230, 235, 240, 250, 260, 270],
-      borderColor: 'rgb(75, 192, 192)',
-      backgroundColor: 'rgba(75, 192, 192, 0.2)',
+      label: "V3 Over Time",
+      data: dataset.map((row) => row.V3),
+      borderColor: "#a1acaf", 
+      backgroundColor: "#a1acaf", 
       fill: true,
-      tension: 0.4,
+      tension: 0.1, 
     },
     {
-      label: 'Next Year Total',
-      data: [211, 217, 223, 228, 233, 243, 248, 253, 263, 273, 283],
-      borderColor: 'rgb(153, 102, 255)',
-      backgroundColor: 'rgba(153, 102, 255, 0.2)',
+      label: "V4 Over Time",
+      data: dataset.map((row) => row.V4),
+      borderColor: "#4b5d67", 
+      backgroundColor: "#4b5d67", 
       fill: true,
-      tension: 0.4,
-    }
+      tension: 0.1, 
+    },
   ],
+  labels: dataset.map((row) => `${row.V1}-${row.V2}`), 
 };
 
-const ExampleResultSection = () => {
+const barChartData = {
+  datasets: [
+    {
+      label: "V5 Distribution",
+      data: dataset.map((row) => row.V5),
+      backgroundColor: "#a1acaf", 
+    },
+    {
+      label: "V6 Distribution",
+      data: dataset.map((row) => row.V6),
+      backgroundColor: "#4b5d67", 
+    },
+  ],
+  labels: dataset.map((row) => `${row.V1}-${row.V2}`),
+};
+
+const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // Duration of animations
-      once: true,      // Animation triggers only once
+      duration: 800,
+      delay: 200,
+      once: true,
     });
   }, []);
 
   return (
-    <div className="relative flex flex-col bg-gray-50 p-12">
-      <h2 className="text-4xl font-semibold text-gray-800 text-center mb-16">Example Result</h2>
+    <section className="bg-[#f4f4f4] py-16 px-4">
+      <div className="max-w-6xl mx-auto">
+        {/* Título de la sección */}
+        <h2 className="text-4xl font-semibold text-center text-[#333] mb-12" data-aos="fade-up">
+          Data Preprocessing Visualization
+        </h2>
 
-      {/* Graphs and Data */}
-      <div className="flex flex-col space-y-12">
-        <div className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0" data-aos="fade-up" data-aos-delay="100">
-          {/* Graph */}
-          <div className="flex justify-center md:w-1/2 px-6 md:px-8">
-            <Line data={exampleData} options={{
-              responsive: true,
-              plugins: {
-                title: {
-                  display: true,
-                  text: 'Forecasting Comparison: Current vs Next Year'
-                },
-                tooltip: {
-                  mode: 'nearest',
-                  intersect: false,
-                },
-              },
-              scales: {
-                x: {
-                  title: {
-                    display: true,
-                    text: 'Year',
-                  },
-                },
-                y: {
-                  title: {
-                    display: true,
-                    text: 'Total Faculty Count',
-                  },
-                },
-              },
-            }} />
-          </div>
+        {/* Visualización de Duplicados */}
+        <section className="mb-16" data-aos="fade-up" data-aos-delay="200">
+          <h2 className="text-2xl font-semibold text-[#444] mb-4">Duplicate Check</h2>
+          <p className="text-[#555]">
+            No duplicate rows were found in the dataset. All rows are unique.
+          </p>
+        </section>
 
-          {/* Description */}
-          <div className="flex flex-col md:w-1/2 text-justify px-6 md:px-8">
-            <div className="text-2xl font-semibold text-gray-800 mb-4 text-center md:text-left">
-              Faculty Growth Forecast
-            </div>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              This graph compares the current faculty count (Total Actual) with the projected faculty count (Total Next Year) across several years. It provides a clear visual representation of how the number of staff is expected to grow, aiding decision-makers in their resource planning.
-            </p>
+        {/* Visualización de Nulos */}
+        <section className="mb-16" data-aos="fade-up" data-aos-delay="400">
+          <h2 className="text-2xl font-semibold text-[#444] mb-4">Null Values</h2>
+          <p className="text-[#555]">
+            No null values were detected. The dataset is complete.
+          </p>
+        </section>
+
+        {/* Gráfica de líneas */}
+        <section className="mb-16" data-aos="fade-up" data-aos-delay="600">
+          <h2 className="text-2xl font-semibold text-[#444] mb-4">Trends Over Time</h2>
+          <div className="bg-[#fff] p-6 rounded-lg shadow-lg mx-auto w-full max-w-4xl">
+            <Line data={lineChartData} options={{ responsive: true, maintainAspectRatio: false }} />
           </div>
-        </div>
+        </section>
+
+        {/* Gráfica de barras */}
+        <section className="mb-16" data-aos="fade-up" data-aos-delay="800">
+          <h2 className="text-2xl font-semibold text-[#444] mb-4">Feature Distribution</h2>
+          <div className="bg-[#fff] p-6 rounded-lg shadow-lg mx-auto w-full max-w-4xl">
+            <Bar data={barChartData} options={{ responsive: true, maintainAspectRatio: false }} />
+          </div>
+        </section>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default ExampleResultSection;
+export default App;

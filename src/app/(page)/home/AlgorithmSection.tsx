@@ -8,28 +8,28 @@ const algorithms = [
     subtitle: '‎ ',
     description: 'Analyzes historical data to find patterns and make future predictions.',
     details: 'AutoARIMA automatically determines the best parameters for ARIMA, optimizing forecasts for academic department data.',
-    link: '/AutoARIMA', // Añadí la propiedad 'link' para el enlace específico
+    link: '//algorithms/autoarima', 
   },
   {
     title: 'LSTM',
     subtitle: 'Long Short-Term Memory',
     description: 'Neural networks that retain information for long periods to predict complex sequences.',
     details: 'LSTM networks are particularly effective for sequence prediction tasks, such as time series or text generation in academic contexts.',
-    link: '/LSTM', // No se especifica un enlace para LSTM aún
+    link: '//algorithms/lstm', 
   },
   {
     title: 'CNN',
     subtitle: 'Convolutional Neural Network',
     description: 'Specialized in identifying patterns within data, such as images or sequences.',
     details: 'CNNs excel at feature extraction, making them suitable for analyzing structured academic datasets.',
-    link: '/algorithms/cnn', // No se especifica un enlace para CNN aún
+    link: '/algorithms/cnn', 
   },
   {
     title: 'AutoEncoders',
     subtitle: '‎ ',
     description: 'Learn to compress and reconstruct data, helping to identify key patterns.',
     details: 'AutoEncoders focus on unsupervised learning, reducing dimensionality while preserving essential features in academic department datasets.',
-    link: '#', // No se especifica un enlace para AutoEncoders aún
+    link: '/algorithms/autoencoders',
   },
 ];
 
