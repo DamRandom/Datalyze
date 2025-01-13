@@ -6,6 +6,8 @@ import LSTMFeaturesSection from "./modules/LSTMFeatures";
 import Footer from "@/components/common/Footer";
 import LSTMModelParameters from "./modules/LSTMModelParameters";
 import LSTMDataPreprocessing from "./modules/LSTMDataPreprocessing";
+import LSTMTrainingProcess from "./modules/LSTMTrainingProcess";
+import LSTMPredictions from "./modules/LSTMPredictions";
 
 export default function HomePage() {
     const sections = [
@@ -31,6 +33,12 @@ export default function HomePage() {
                 </section>
                 <section>
                     <LSTMDataPreprocessing/>
+                </section>
+                <section>
+                    <LSTMTrainingProcess/>
+                </section>
+                <section>
+                    <LSTMPredictions/>
                 </section>
                 <Footer />
             </main>
