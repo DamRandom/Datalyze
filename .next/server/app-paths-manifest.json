@@ -1,5 +1,8 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/home/page": "app/home/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/home/page": "app/home/page.js",
+  "/home/algorithms/autoarima/page": "app/home/algorithms/autoarima/page.js",
+  "/home/algorithms/cnn/page": "app/home/algorithms/cnn/page.js",
+  "/home/algorithms/lstm/page": "app/home/algorithms/lstm/page.js"
 }
