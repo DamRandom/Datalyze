@@ -3,13 +3,13 @@ import React from "react";
 
 import NavBar from "@/components/common/NavBar";
 import Footer from "@/components/common/Footer";
-import AutoARIMAIntroduction from "./components/AutoARIMAIntroduction";
-import AutoARIMAFormula from "./components/ARIMAFormula";
-import AutoARIMAHyperparameters from "./components/AutoARIMAHyperparameters";
-import ARIMAModelFitting from "./components/ARIMAModelFitting";
-import ARIMAMetrics from "./components/ARIMAMetrics";
-import ModelPredictionOutput from "./components/ModelPredictionOutput";
-import AdditionalConsiderations from "./components/AdditionalConsiderations";
+import AutoARIMAIntroduction from "./modules/AutoARIMAIntroduction";
+import AutoARIMAFormula from "./modules/ARIMAFormula";
+import AutoARIMAHyperparameters from "./modules/AutoARIMAHyperparameters";
+import ARIMAModelFitting from "./modules/ARIMAModelFitting";
+import ARIMAMetrics from "./modules/ARIMAMetrics";
+import ModelPredictionOutput from "./modules/ModelPredictionOutput";
+import AdditionalConsiderations from "./modules/AdditionalConsiderations";
 
 const CNNPage: React.FC = () => {
     const sections = [

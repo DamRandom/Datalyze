@@ -1,12 +1,12 @@
 import React from "react";
 
-import CNNIntroduction from "./components/CNNIntroduction";
-import CNNHowWorks from "./components/CNNHowWorks";
-import CNNTraining from "./components/CNNTraining";
-import CNNEvaluation from "./components/CNNEvaluation";
-import CNNArchitectures from "./components/CNNArchitectures";
-import CNNApplications from "./components/CNNApplications";
-import CNNAdvantagesDisadvantages from "./components/CNNAdvantagesDisadvantages";
+import CNNIntroduction from "./modules/CNNIntroduction";
+import CNNHowWorks from "./modules/CNNHowWorks";
+import CNNTraining from "./modules/CNNTraining";
+import CNNEvaluation from "./modules/CNNEvaluation";
+import CNNArchitectures from "./modules/CNNArchitectures";
+import CNNApplications from "./modules/CNNApplications";
+import CNNAdvantagesDisadvantages from "./modules/CNNAdvantagesDisadvantages";
 import NavBar from "@/components/common/NavBar";
 import Footer from "@/components/common/Footer";
 

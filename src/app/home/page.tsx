@@ -1,11 +1,11 @@
 "use client";
 
 import NavBar from "@/components/common/NavBar";
-import UploadSection from "@/app/(page)/home/UploadSection";
-import HowItWorksSection from "@/app/(page)/home/HowItWorksSection";
-import AlgorithmSection from "@/app/(page)/home/AlgorithmSection";
-import ExampleResultSection from "@/app/(page)/home/ExampleResultSection";
-import ContactSection from "@/app/(page)/home/ContactSection";
+import UploadSection from "@/app/home/(page)/UploadSection";
+import HowItWorksSection from "@/app/home/(page)/HowItWorksSection";
+import AlgorithmSection from "@/app/home/(page)/AlgorithmSection";
+import ExampleResultSection from "@/app/home/(page)/ExampleResultSection";
+import ContactSection from "@/app/home/(page)/ContactSection";
 import Footer from "@/components/common/Footer";
 
 export default function HomePage() {

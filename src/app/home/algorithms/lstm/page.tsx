@@ -1,8 +1,8 @@
 "use client";
 
 import NavBar from "@/components/common/NavBar";
-import LSTMIntroduction from "./components/LSTMIntroduction";
-import LSTMFeaturesSection from "./components/LSTMFeatures";
+import LSTMIntroduction from "./modules/LSTMIntroduction";
+import LSTMFeaturesSection from "./modules/LSTMFeatures";
 import Footer from "@/components/common/Footer";
 
 export default function HomePage() {
