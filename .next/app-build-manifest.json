@@ -12,16 +12,16 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/(page)/algorithms/autoarima/layout": [
+    "/(page)/algorithms/lstm/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(page)/algorithms/autoarima/layout.js"
+      "static/chunks/app/(page)/algorithms/lstm/layout.js"
     ],
-    "/(page)/algorithms/autoarima/page": [
+    "/(page)/algorithms/lstm/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(page)/algorithms/autoarima/page.css",
-      "static/chunks/app/(page)/algorithms/autoarima/page.js"
+      "static/css/app/(page)/algorithms/lstm/page.css",
+      "static/chunks/app/(page)/algorithms/lstm/page.js"
     ]
   }
 }
