@@ -9,6 +9,7 @@ import LSTMDataPreprocessing from "./modules/LSTMDataPreprocessing";
 import LSTMTrainingProcess from "./modules/LSTMTrainingProcess";
 import LSTMPredictions from "./modules/LSTMPredictions";
 import ModelPerformanceMetrics from "./modules/TSTMModelPerformanceMetrics";
+import PracticalApplicationsOfLSTMs from "./modules/PracticalApplicationsOfLSTMs";
 
 export default function HomePage() {
     const sections = [
@@ -43,6 +44,9 @@ export default function HomePage() {
                 </section>
                 <section>
                     <ModelPerformanceMetrics/>
+                </section>
+                <section>
+                    <PracticalApplicationsOfLSTMs/>
                 </section>
                 <Footer />
             </main>
