@@ -4,11 +4,15 @@ import React from "react";
 import NavBar from "@/components/common/NavBar";
 import Footer from "@/components/common/Footer";
 import AutoencodersInfo from "./modules/AutoencodersInfo";
+import AutoencodersArchitecture from "./modules/AutoencodersArchitecture";
+import AutoencodersTypes from "./modules/AutoencodersTypes";
+import TrainingProcess from "./modules/TrainingProcess";
 
 
 const CNNPage: React.FC = () => {
     const sections = [
         { id: "introduction", label: "Introduction" },
+        { id: "architecture", label: "Architecture"}
     ];
 
     return (
@@ -20,6 +24,15 @@ const CNNPage: React.FC = () => {
             <main className="pt-16">
                 <section id="introduction">
                     <AutoencodersInfo />
+                </section>
+                <section id='architecture'>
+                    <AutoencodersArchitecture />
+                </section>
+                <section>
+                    <AutoencodersTypes />
+                </section>
+                <section>
+                    <TrainingProcess />
                 </section>
                 <Footer />
             </main>

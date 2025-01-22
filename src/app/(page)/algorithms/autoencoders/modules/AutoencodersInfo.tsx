@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -91,36 +90,6 @@ const AutoencodersPage = () => {
             patterns. However, PCA remains computationally efficient, whereas
             autoencoders require more resources due to their training process.
           </p>
-        </div>
-
-        {/* Optional Image Section */}
-        <div className="bg-white shadow-xl rounded-lg p-8 mb-6">
-          <div className="flex justify-center mb-4">
-            <Image
-              src="/images/AutoEcoders/autoencoder_diagram.avif"
-              alt="Autoencoder Diagram"
-              width={900}
-              height={450}
-              className="rounded-lg"
-            />
-          </div>
-        </div>
-
-        {/* Image Source */}
-        <div
-          className="text-sm text-center text-[#555] mb-8"
-          data-aos="fade-up"
-          data-aos-delay="1200"
-        >
-          <span className="font-semibold text-[#333]">Source: </span>
-          <a
-            href="https://www.datacamp.com/tutorial/introduction-to-autoencoders"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800"
-          >
-            Introduction to Autoencoders: From The Basics to Advanced Applications in PyTorch
-          </a>
         </div>
       </div>
     </section>
