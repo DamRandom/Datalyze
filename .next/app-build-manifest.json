@@ -12,16 +12,16 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/(page)/algorithms/lstm/layout": [
+    "/(page)/algorithms/autoencoders/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(page)/algorithms/lstm/layout.js"
+      "static/chunks/app/(page)/algorithms/autoencoders/layout.js"
     ],
-    "/(page)/algorithms/lstm/page": [
+    "/(page)/algorithms/autoencoders/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(page)/algorithms/lstm/page.css",
-      "static/chunks/app/(page)/algorithms/lstm/page.js"
+      "static/css/app/(page)/algorithms/autoencoders/page.css",
+      "static/chunks/app/(page)/algorithms/autoencoders/page.js"
     ]
   }
 }
