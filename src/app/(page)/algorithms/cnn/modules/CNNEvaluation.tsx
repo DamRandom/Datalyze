@@ -8,8 +8,8 @@ import "aos/dist/aos.css";
 export default function CNNEvaluation() {
   useEffect(() => {
     AOS.init({
-      duration: 800, // Tiempo de duración aumentado para hacerlo más suave
-      delay: 200,    // Retraso inicial para que no aparezcan demasiado rápido
+      duration: 800, 
+      delay: 200,    
       once: true,
     });
   }, []);

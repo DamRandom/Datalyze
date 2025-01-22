@@ -10,7 +10,7 @@ const ContactSection = () => {
   return (
     <section className="min-h-screen py-12 bg-[#e4e4e4] flex items-center">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center lg:items-start justify-between">
-        {/* Texto descriptivo */}
+        {/* Descriptive text */}
         <div
           className="lg:w-1/2 mb-8 lg:mb-0"
           data-aos="fade-up"
@@ -30,7 +30,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        {/* Formulario de contacto */}
+        {/* Contact form */}
         <form
           data-aos="fade-up"
           data-aos-duration="1000"

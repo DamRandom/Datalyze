@@ -86,12 +86,12 @@ const App = () => {
   return (
     <section className="bg-[#f4f4f4] py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Título de la sección */}
+        {/* Section title */}
         <h2 className="text-4xl font-semibold text-center text-[#333] mb-12" data-aos="fade-up">
           Data Preprocessing Visualization
         </h2>
 
-        {/* Visualización de Duplicados */}
+        {/* Duplicated Visualization */}
         <section className="mb-16" data-aos="fade-up" data-aos-delay="200">
           <h2 className="text-2xl font-semibold text-[#444] mb-4">Duplicate Check</h2>
           <p className="text-[#555]">
@@ -99,7 +99,7 @@ const App = () => {
           </p>
         </section>
 
-        {/* Visualización de Nulos */}
+        {/* Null visualization */}
         <section className="mb-16" data-aos="fade-up" data-aos-delay="400">
           <h2 className="text-2xl font-semibold text-[#444] mb-4">Null Values</h2>
           <p className="text-[#555]">
@@ -107,7 +107,7 @@ const App = () => {
           </p>
         </section>
 
-        {/* Gráfica de líneas */}
+        {/* Lines chart */}
         <section className="mb-16" data-aos="fade-up" data-aos-delay="600">
           <h2 className="text-2xl font-semibold text-[#444] mb-4">Trends Over Time</h2>
           <div className="bg-[#fff] p-6 rounded-lg shadow-lg mx-auto w-full max-w-4xl">
@@ -115,7 +115,7 @@ const App = () => {
           </div>
         </section>
 
-        {/* Gráfica de barras */}
+        {/* Bar chart */}
         <section className="mb-16" data-aos="fade-up" data-aos-delay="800">
           <h2 className="text-2xl font-semibold text-[#444] mb-4">Feature Distribution</h2>
           <div className="bg-[#fff] p-6 rounded-lg shadow-lg mx-auto w-full max-w-4xl">

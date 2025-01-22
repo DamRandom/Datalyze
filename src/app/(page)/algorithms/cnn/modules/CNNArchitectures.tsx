@@ -7,8 +7,8 @@ import "aos/dist/aos.css";
 export default function CNNSection() {
   useEffect(() => {
     AOS.init({
-      duration: 500, // Reducido a 500 ms para animación más rápida
-      delay: 100, // Añadido un retraso de 100 ms por defecto (puedes ajustarlo a tu preferencia)
+      duration: 500, 
+      delay: 100, 
       once: true,
     });
   }, []);

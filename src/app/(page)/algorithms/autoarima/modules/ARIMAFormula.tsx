@@ -7,8 +7,8 @@ import "aos/dist/aos.css";
 export default function ARIMAFormula() {
     useEffect(() => {
         AOS.init({
-            duration: 800, // Tiempo de duración de la animación
-            delay: 200,    // Retraso inicial
+            duration: 800, 
+            delay: 200,   
             once: true,
         });
     }, []);

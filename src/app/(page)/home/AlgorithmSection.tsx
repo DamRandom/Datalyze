@@ -62,7 +62,7 @@ const AlgorithmSection = () => {
                 <p className="text-[#475569] text-justify leading-relaxed">{algorithm.description}</p>
                 {/* "Read more" styled as a link, visible only on hover of the card */}
                 <a
-                  href={algorithm.link} // Usar el enlace correspondiente aquí
+                  href={algorithm.link} 
                   className="absolute bottom-6 right-6 text-[#4B5563] text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:underline"
                 >
                   Read more...

@@ -1,16 +1,16 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const UploadSection = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [file, setFile] = useState<File | null>(null);
 
   useEffect(() => {
-    AOS.init(); // Initialize AOS on client-side
+    AOS.init(); // Inicializar AOS en el lado del cliente
   }, []);
 
   const handleDragOver = (e: React.DragEvent) => {
@@ -29,7 +29,7 @@ const UploadSection = () => {
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
       const droppedFile = e.dataTransfer.files[0];
       setFile(droppedFile);
-      console.log('File received:', droppedFile);
+      console.log("Archivo recibido:", droppedFile);
     }
   };
 
@@ -37,25 +37,29 @@ const UploadSection = () => {
     if (e.target.files && e.target.files[0]) {
       const selectedFile = e.target.files[0];
       setFile(selectedFile);
-      console.log('File selected:', selectedFile);
+      console.log("Archivo seleccionado:", selectedFile);
     }
   };
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-[#e4e4e4]">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
-        {/* Left: Title, text, and upload area */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center gap-x-4">
+        {/* Izquierda: Título, texto y área de carga */}
         <div
-          className="md:w-1/2 text-center md:text-left mb-8 md:mb-0"
+          className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          <h1 className="text-4xl font-semibold text-[#1E293B] mb-4">Organize Your Teachers</h1>
-          <p className="text-lg text-[#475569] mb-6">
-            Upload your dataset to start leveraging AI for intelligent teacher staff management and gain better insights.
+          <h1 className="text-3xl sm:text-4xl font-semibold text-[#1E293B] mb-4">
+            Organiza a tus profesores
+          </h1>
+          <p className="text-base sm:text-lg text-[#475569] mb-6">
+            Sube tu conjunto de datos para comenzar a utilizar la IA en la gestión inteligente del personal docente y obtener mejores perspectivas.
           </p>
           <div
-            className={`border-2 border-dashed rounded-lg p-6 bg-[#FFFFFF] text-center transition-all duration-300 relative ${isDragging ? 'border-[#2563EB] bg-[#DBEAFE]' : 'border-[#9CA3AF]'}`}
+            className={`border-2 border-dashed rounded-lg p-6 bg-[#FFFFFF] text-center transition-all duration-300 relative ${
+              isDragging ? "border-[#2563EB] bg-[#DBEAFE]" : "border-[#9CA3AF]"
+            }`}
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}
             onDrop={handleDrop}
@@ -63,16 +67,23 @@ const UploadSection = () => {
             data-aos-duration="1000"
             data-aos-delay="500"
           >
-            <p className="text-[#475569] mb-2">{file ? `File ready to upload: ${file.name}` : 'Drag your dataset here'}</p>
-            <p className="text-sm text-[#9CA3AF]">Accepted formats: CSV, Excel, JSON</p>
+            <p className="text-[#475569] mb-2">
+              {file ? `Archivo listo para subir: ${file.name}` : "Arrastra tu conjunto de datos aquí"}
+            </p>
+            <p className="text-sm text-[#9CA3AF]">
+              Formatos aceptados: CSV, Excel, JSON
+            </p>
             <input
               type="file"
               onChange={handleFileInputChange}
               className="hidden"
               id="file-upload"
             />
-            <label htmlFor="file-upload" className="mt-4 inline-block cursor-pointer py-2 px-4 bg-[#a1acaf] text-[#FFFFFF] rounded-lg hover:bg-[#777f81]">
-              Select File
+            <label
+              htmlFor="file-upload"
+              className="mt-4 inline-block cursor-pointer py-2 px-4 bg-[#a1acaf] text-[#FFFFFF] rounded-lg hover:bg-[#777f81]"
+            >
+              Seleccionar archivo
             </label>
             {isDragging && (
               <div className="absolute inset-0 bg-[#000000] bg-opacity-30 pointer-events-none rounded-lg"></div>
@@ -80,18 +91,18 @@ const UploadSection = () => {
           </div>
         </div>
 
-        {/* Right: Image */}
+        {/* Derecha: Imagen */}
         <div
-          className="md:w-1/2 flex justify-center"
+          className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
           <Image
             src="/images/analytics-3291738.jpg"
-            alt="Illustration of faculty organization with AI"
+            alt="Ilustración de organización de profesores con IA"
             width={500}
             height={400}
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg max-w-full h-auto"
           />
         </div>
       </div>

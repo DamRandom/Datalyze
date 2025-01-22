@@ -14,7 +14,11 @@ import PracticalApplicationsOfLSTMs from "./modules/PracticalApplicationsOfLSTMs
 export default function HomePage() {
     const sections = [
         { id: "introduction", label: "Introduction" },
-        { id: "features", label: "Features"}
+        { id: "features", label: "Features"},
+        { id: "parameters", label: "Parameters"},
+        { id: "trainingProcess", label: "Training"},
+        { id: "performanceMetrics", label: "Performance"},
+        { id: "practicalApplications", label: "Practical Applications"}
     ];
 
     return (
@@ -33,19 +37,19 @@ export default function HomePage() {
                 <section id="parameters">
                     <LSTMModelParameters/>
                 </section>
-                <section>
+                <section id='preprocessing'>
                     <LSTMDataPreprocessing/>
                 </section>
-                <section>
+                <section id='trainingProcess'>
                     <LSTMTrainingProcess/>
                 </section>
-                <section>
+                <section id='predictions'>
                     <LSTMPredictions/>
                 </section>
-                <section>
+                <section id='performanceMetrics'>
                     <ModelPerformanceMetrics/>
                 </section>
-                <section>
+                <section id='practicalApplications'>
                     <PracticalApplicationsOfLSTMs/>
                 </section>
                 <Footer />

@@ -8,8 +8,8 @@ import "aos/dist/aos.css";
 export default function CNNTraining() {
   useEffect(() => {
     AOS.init({
-      duration: 800, // Duración de la animación
-      delay: 200,    // Retraso inicial
+      duration: 800, 
+      delay: 200,    
       once: true,
     });
   }, []);
