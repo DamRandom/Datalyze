@@ -9,12 +9,18 @@ import AutoencodersTypes from "./modules/AutoencodersTypes";
 import TrainingProcess from "./modules/TrainingProcess";
 import ApplicationsOfAutoencoders from "./modules/ApplicationsOfAutoencoders";
 import PracticalImplementation from "./modules/PracticalImplementation";
+import ChallengesAndConsiderations from "./modules/ChallengesAndConsiderations";
 
 
 const CNNPage: React.FC = () => {
     const sections = [
         { id: "introduction", label: "Introduction" },
-        { id: "architecture", label: "Architecture"}
+        { id: "architecture", label: "Architecture"},
+        { id: "types", label: "Types"},
+        { id: "trainingProcess", label: "Training Process"},
+        { id: "applications", label: "applications"},
+        { id: "practicalImplementation", label: "Practical Implementation"},
+        { id: "challengesAndConsiderations", label: "Challenges"}
     ];
 
     return (
@@ -30,17 +36,20 @@ const CNNPage: React.FC = () => {
                 <section id='architecture'>
                     <AutoencodersArchitecture />
                 </section>
-                <section>
+                <section id='types'>
                     <AutoencodersTypes />
                 </section>
-                <section>
+                <section id='trainingProcess'>
                     <TrainingProcess />
                 </section>
-                <section>
+                <section id='applications'>
                     <ApplicationsOfAutoencoders />
                 </section>
-                <section>
+                <section id='practicalImplementation'>
                     <PracticalImplementation />
+                </section>
+                <section id='challengesAndConsiderations'>
+                    <ChallengesAndConsiderations />
                 </section>
                 <Footer />
             </main>
