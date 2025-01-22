@@ -8,6 +8,7 @@ import AutoencodersArchitecture from "./modules/AutoencodersArchitecture";
 import AutoencodersTypes from "./modules/AutoencodersTypes";
 import TrainingProcess from "./modules/TrainingProcess";
 import ApplicationsOfAutoencoders from "./modules/ApplicationsOfAutoencoders";
+import PracticalImplementation from "./modules/PracticalImplementation";
 
 
 const CNNPage: React.FC = () => {
@@ -37,6 +38,9 @@ const CNNPage: React.FC = () => {
                 </section>
                 <section>
                     <ApplicationsOfAutoencoders />
+                </section>
+                <section>
+                    <PracticalImplementation />
                 </section>
                 <Footer />
             </main>
