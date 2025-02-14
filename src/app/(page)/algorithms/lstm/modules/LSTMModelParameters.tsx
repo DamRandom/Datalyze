@@ -7,8 +7,8 @@ import "aos/dist/aos.css";
 export default function LSTMModelParameters() {
     useEffect(() => {
         AOS.init({
-            duration: 800, // Animation duration
-            delay: 200,    // Initial delay
+            duration: 800, 
+            delay: 200,   
             once: true,
         });
     }, []);

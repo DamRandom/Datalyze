@@ -8,8 +8,8 @@ import "aos/dist/aos.css";
 export default function LSTMSection() {
   useEffect(() => {
     AOS.init({
-      duration: 800, // Animation duration
-      delay: 200,    // Initial delay
+      duration: 800, 
+      delay: 200,    
       once: true,
     });
   }, []);
@@ -51,7 +51,7 @@ export default function LSTMSection() {
         <div className="bg-white shadow-xl rounded-lg p-8 mb-6">
           <div className="flex justify-center mb-4">
             <Image
-              src="/images/LSTM/LSTMcell.webp" // Replace with the actual image path
+              src="/images/LSTM/LSTMcell.webp" 
               alt="LSTM Architecture"
               width={900}
               height={450}
