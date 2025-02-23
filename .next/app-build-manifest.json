@@ -33,6 +33,17 @@
       "static/chunks/main-app.js",
       "static/css/app/(page)/algorithms/autoencoders/page.css",
       "static/chunks/app/(page)/algorithms/autoencoders/page.js"
+    ],
+    "/(page)/algorithms/cnn/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(page)/algorithms/cnn/layout.js"
+    ],
+    "/(page)/algorithms/cnn/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(page)/algorithms/cnn/page.css",
+      "static/chunks/app/(page)/algorithms/cnn/page.js"
     ]
   }
 }

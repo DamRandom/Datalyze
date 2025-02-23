@@ -12,13 +12,13 @@ import Footer from "@/components/common/Footer";
 
 const CNNPage: React.FC = () => {
   const sections = [
-    { id: "introduction", label: "Introduction" },
-    { id: "how-works", label: "How It Works" },
-    { id: "training", label: "Training" },
-    { id: "evaluation", label: "Evaluation" },
-    { id: "architectures", label: "Architectures" },
-    { id: "applications", label: "Applications" },
-    { id: "advantages-disadvantages", label: "Advantages & Disadvantages" },
+    { id: "introduction", label: "Introducción" },
+    { id: "how-works", label: "Cómo Funciona" },
+    { id: "training", label: "Entrenamiento" },
+    { id: "evaluation", label: "Evaluación" },
+    { id: "architectures", label: "Arquitecturas" },
+    { id: "applications", label: "Aplicaciones" },
+    { id: "advantages-disadvantages", label: "Ventajas y Desventajas" },
   ];
 
   return (
@@ -27,7 +27,7 @@ const CNNPage: React.FC = () => {
       <NavBar sections={sections} />
 
       {/* Main Content */}
-      <main className="pt-16"> {/* Ajuste para evitar que el contenido quede tapado por el header */}
+      <main className="pt-16"> {/* Adjustment to avoid content being covered by the header */}
         <section id="introduction">
           <CNNIntroduction />
         </section>

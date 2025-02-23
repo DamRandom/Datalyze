@@ -19,19 +19,19 @@ export default function CNNHowWorks() {
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <h2 className="text-4xl font-semibold text-center text-[#333] mb-10" data-aos="fade-up">
-          How CNNs Work
+          Cómo Funcionan las CNN
         </h2>
 
         {/* Text Content */}
         <div className="mb-8 text-justify" data-aos="fade-up" data-aos-delay="200">
           <p className="text-lg text-[#555] mb-6">
-            Convolutional Neural Networks operate by learning hierarchical representations of data, allowing them to capture both low-level and high-level features in a structured manner. Early layers in the network focus on detecting simple patterns such as edges or textures, while deeper layers extract more complex features like shapes or objects. This hierarchical approach enables CNNs to effectively tackle sophisticated tasks like image classification and object detection.
+            Las Redes Neuronales Convolucionales operan aprendiendo representaciones jerárquicas de los datos, lo que les permite capturar tanto características de bajo nivel como de alto nivel de manera estructurada. Las primeras capas de la red se centran en detectar patrones simples como bordes o texturas, mientras que las capas más profundas extraen características más complejas como formas u objetos. Este enfoque jerárquico permite que las CNN aborden de manera efectiva tareas sofisticadas como la clasificación de imágenes y la detección de objetos.
           </p>
           <p className="text-lg text-[#555] mb-6">
-            The process begins with an input image that is analyzed through multiple convolutional and pooling layers. These layers collaborate to detect and refine essential features at varying levels of abstraction. The convolutional layers emphasize feature extraction by applying specialized filters, while pooling layers reduce the spatial dimensions, ensuring computational efficiency without discarding critical information. Together, these components prepare the data for the final classification or prediction stage, where fully connected layers leverage the learned features to generate accurate outputs.
+            El proceso comienza con una imagen de entrada que se analiza a través de múltiples capas de convolución y agrupamiento. Estas capas colaboran para detectar y refinar características esenciales a diferentes niveles de abstracción. Las capas convolucionales enfatizan la extracción de características aplicando filtros especializados, mientras que las capas de agrupamiento reducen las dimensiones espaciales, asegurando la eficiencia computacional sin descartar información crítica. Juntas, estos componentes preparan los datos para la etapa final de clasificación o predicción, donde las capas completamente conectadas aprovechan las características aprendidas para generar salidas precisas.
           </p>
           <p className="text-lg text-[#555] mb-6">
-            By combining these mechanisms, CNNs achieve remarkable precision in interpreting and categorizing visual data. This capability has revolutionized fields such as computer vision, making CNNs indispensable tools for analyzing complex imagery.
+            Al combinar estos mecanismos, las CNN logran una precisión notable en la interpretación y categorización de datos visuales. Esta capacidad ha revolucionado campos como la visión por computadora, convirtiendo a las CNN en herramientas indispensables para analizar imágenes complejas.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function CNNHowWorks() {
           <div className="flex justify-center mb-4">
             <Image
               src="/images/tensorflow-keras-convolutional-layer-example-1024x704.webp"
-              alt="Visual representation of the CNN process"
+              alt="Representación visual del proceso de la CNN"
               width={900}
               height={450}
               className="rounded-lg"
@@ -50,7 +50,7 @@ export default function CNNHowWorks() {
 
         {/* Image Source */}
         <div className="text-sm text-center text-[#555] mb-8" data-aos="fade-up" data-aos-delay="600">
-          <span className="font-semibold text-[#333]">Source: </span>
+          <span className="font-semibold text-[#333]">Fuente: </span>
           <a
             href="https:learnopencv.com/understanding-convolutional-neural-networks-cnn/"
             target="_blank"

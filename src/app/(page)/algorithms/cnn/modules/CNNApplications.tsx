@@ -19,7 +19,7 @@ const CNNApplications = () => {
           className="text-4xl font-semibold text-center text-[#333] mb-10"
           data-aos="fade-up"
         >
-          Applications of Convolutional Neural Networks
+          Aplicaciones de las Redes Neuronales Convolucionales
         </h1>
 
         <div className="mb-16">
@@ -27,22 +27,22 @@ const CNNApplications = () => {
             className="text-3xl font-semibold text-[#333] mb-6"
             data-aos="fade-up"
           >
-            Versatile Use Cases of CNNs
+            Casos de Uso Versátiles de las CNN
           </h2>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up">
-            Convolutional Neural Networks (CNNs) have revolutionized computer vision by enabling machines to interpret and process visual data with unmatched precision. Their hierarchical structure allows automatic feature extraction, making them indispensable in numerous fields:
+            Las Redes Neuronales Convolucionales (CNN) han revolucionado la visión por computadora al permitir que las máquinas interpreten y procesen datos visuales con una precisión inigualable. Su estructura jerárquica permite la extracción automática de características, lo que las hace indispensables en numerosos campos:
           </p>
 
           {/* Applications List */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
-              { title: "Image Classification", description: "Assigning images to predefined categories, such as identifying animal species or vehicle types." },
-              { title: "Object Detection", description: "Locating and categorizing multiple objects within an image, essential for autonomous driving and surveillance systems." },
-              { title: "Image Segmentation", description: "Dividing an image into segments to identify boundaries and objects, crucial in medical imaging for tumor detection." },
-              { title: "Facial Recognition", description: "Identifying or verifying individuals by analyzing facial features, widely used in security and authentication systems." },
-              { title: "Medical Image Analysis", description: "Assisting in disease diagnosis by analyzing medical images, such as detecting diabetic retinopathy." },
-              { title: "Autonomous Driving", description: "Enabling vehicles to understand their surroundings by recognizing traffic signs, pedestrians, and obstacles." },
-              { title: "Video Analysis", description: "Interpreting video data for action recognition, event detection, and summarization." },
+              { title: "Clasificación de Imágenes", description: "Asignar imágenes a categorías predefinidas, como identificar especies de animales o tipos de vehículos." },
+              { title: "Detección de Objetos", description: "Localizar y categorizar múltiples objetos dentro de una imagen, esencial para la conducción autónoma y sistemas de vigilancia." },
+              { title: "Segmentación de Imágenes", description: "Dividir una imagen en segmentos para identificar límites y objetos, crucial en imágenes médicas para la detección de tumores." },
+              { title: "Reconocimiento Facial", description: "Identificar o verificar individuos analizando características faciales, ampliamente utilizado en sistemas de seguridad y autenticación." },
+              { title: "Análisis de Imágenes Médicas", description: "Asistir en el diagnóstico de enfermedades analizando imágenes médicas, como detectar retinopatía diabética." },
+              { title: "Conducción Autónoma", description: "Permitir que los vehículos comprendan su entorno reconociendo señales de tráfico, peatones y obstáculos." },
+              { title: "Análisis de Video", description: "Interpretar datos de video para reconocimiento de acciones, detección de eventos y resumido." },
             ].map((app, index) => (
               <div
                 key={index}
@@ -61,28 +61,28 @@ const CNNApplications = () => {
             className="text-3xl font-semibold text-[#333] mb-6"
             data-aos="fade-up"
           >
-            Case Study: Diabetic Retinopathy Detection
+            Estudio de Caso: Detección de Retinopatía Diabética
           </h2>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up">
-            Diabetic Retinopathy (DR) is a leading cause of blindness, resulting from prolonged diabetes affecting the retina. Early detection is vital for effective treatment and vision preservation. CNNs have become fundamental in automating DR detection and classification from retinal images.
+            La Retinopatía Diabética (RD) es una de las principales causas de ceguera, resultante de la diabetes prolongada que afecta la retina. La detección temprana es vital para un tratamiento efectivo y la preservación de la visión. Las CNN se han vuelto fundamentales en la automatización de la detección y clasificación de la RD a partir de imágenes retinianas.
           </p>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up">
-            By training on large datasets of retinal fundus images, CNNs can identify features indicative of DR, such as microaneurysms, hemorrhages, and exudates. Studies have demonstrated that CNN-based models achieve high sensitivity and specificity in DR detection, often surpassing human experts in consistency and speed.
+            Al entrenar en grandes conjuntos de datos de imágenes de fondo retiniano, las CNN pueden identificar características indicativas de la RD, como microaneurismas, hemorragias y exudados. Los estudios han demostrado que los modelos basados en CNN logran alta sensibilidad y especificidad en la detección de RD, a menudo superando a expertos humanos en consistencia y velocidad.
           </p>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up">
-            For example, a study utilizing advanced neural network combinations evaluated their performance in classifying DR stages from retinal images. The proposed model showcased significant potential in enhancing diagnostic capabilities for DR detection.
+            Por ejemplo, un estudio que utilizó combinaciones avanzadas de redes neuronales evaluó su rendimiento en la clasificación de etapas de RD a partir de imágenes retinianas. El modelo propuesto mostró un potencial significativo para mejorar las capacidades de diagnóstico en la detección de RD.
           </p>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up">
-            Benefits of CNN implementation in DR detection include:
+            Los beneficios de la implementación de CNN en la detección de RD incluyen:
           </p>
           <ul
             className="list-disc list-inside text-lg text-[#555] mb-6"
             data-aos="fade-up"
           >
             {[
-              "Scalability: Automated analysis can handle large image volumes, enabling large-scale screening programs.",
-              "Consistency: CNNs provide uniform evaluations, reducing variability associated with human judgment.",
-              "Accessibility: Deploying CNN-based tools in primary care settings enhances access to early diagnostic services, particularly in underserved areas.",
+              "Escalabilidad: El análisis automatizado puede manejar grandes volúmenes de imágenes, lo que permite programas de cribado a gran escala.",
+              "Consistencia: Las CNN proporcionan evaluaciones uniformes, reduciendo la variabilidad asociada con el juicio humano.",
+              "Accesibilidad: Desplegar herramientas basadas en CNN en entornos de atención primaria mejora el acceso a servicios de diagnóstico temprano, particularmente en áreas desatendidas.",
             ].map((benefit, index) => (
               <li key={index}>
                 <strong>{benefit.split(":")[0]}:</strong> {benefit.split(":")[1]}
@@ -90,7 +90,7 @@ const CNNApplications = () => {
             ))}
           </ul>
           <p className="text-lg text-[#555] text-justify" data-aos="fade-up">
-            Despite these advantages, challenges remain, including the need for extensive labeled datasets, improving the detection of subtle features, and addressing concerns regarding model interpretability. Researchers are exploring methods to enhance data augmentation, feature visualization, and develop explainable AI frameworks to address these issues.
+            A pesar de estas ventajas, persisten desafíos, incluyendo la necesidad de conjuntos de datos etiquetados extensos, mejorar la detección de características sutiles y abordar preocupaciones sobre la interpretabilidad del modelo. Los investigadores están explorando métodos para mejorar la augmentación de datos, visualización de características y desarrollar marcos de IA explicables para abordar estos problemas.
           </p>
         </div>
       </div>

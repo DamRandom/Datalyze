@@ -19,13 +19,13 @@ export default function CNNEvaluation() {
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <h2 className="text-4xl font-semibold text-center text-[#333] mb-10" data-aos="fade-up">
-          Evaluating CNN Performance
+          Evaluación del Rendimiento de la CNN
         </h2>
 
         {/* Text Content */}
         <div className="mb-8" data-aos="fade-up" data-aos-delay="200">
           <p className="text-lg text-[#555] mb-6 text-justify">
-            After training a Convolutional Neural Network (CNN), evaluating its performance is crucial to ensure its effectiveness. Performance evaluation is typically conducted on a separate test dataset to verify how well the model generalizes to unseen data. This step helps identify potential overfitting and provides insights into the model’s strengths and weaknesses.
+            Después de entrenar una Red Neuronal Convolucional (CNN), evaluar su rendimiento es crucial para asegurar su efectividad. La evaluación del rendimiento se lleva a cabo típicamente en un conjunto de datos de prueba separado para verificar qué tan bien el modelo se generaliza a datos no vistos. Este paso ayuda a identificar el sobreajuste potencial y proporciona información sobre las fortalezas y debilidades del modelo.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function CNNEvaluation() {
           <div className="flex-1" data-aos="fade-up" data-aos-delay="400">
             <Image
               src="/images/confusion_matrix_diabetic_retinopathy.png"
-              alt="Confusion Matrix for Diabetic Retinopathy Detection"
+              alt="Matriz de Confusión para la Detección de Retinopatía Diabética"
               width={900}
               height={450}
               className="rounded-lg"
@@ -42,7 +42,7 @@ export default function CNNEvaluation() {
           </div>
           <div className="flex-1" data-aos="fade-up" data-aos-delay="600">
             <p className="text-lg text-[#555] text-justify">
-              A confusion matrix is a powerful visualization tool for evaluating CNN performance. It breaks down correct and incorrect predictions across classes, offering a detailed perspective on the model&apos;s behavior. For example, in detecting Diabetic Retinopathy from medical images, the matrix can highlight specific areas where the model excels or struggles, guiding further refinements.
+              Una matriz de confusión es una herramienta de visualización poderosa para evaluar el rendimiento de la CNN. Descompone las predicciones correctas e incorrectas a través de las clases, ofreciendo una perspectiva detallada sobre el comportamiento del modelo. Por ejemplo, al detectar Retinopatía Diabética a partir de imágenes médicas, la matriz puede resaltar áreas específicas donde el modelo sobresale o tiene dificultades, guiando refinamientos adicionales.
             </p>
           </div>
         </div>
@@ -50,13 +50,13 @@ export default function CNNEvaluation() {
         {/* Final Paragraph */}
         <div className="mb-8" data-aos="fade-up" data-aos-delay="800">
           <p className="text-lg text-[#555] text-justify">
-            Understanding the nuances of CNN performance through visualizations is critical for refining models and ensuring their reliability in real-world applications. Tools like confusion matrices transform raw metrics into actionable insights, driving continuous improvement and fostering trust in AI systems.
+            Comprender los matices del rendimiento de la CNN a través de visualizaciones es fundamental para refinar modelos y asegurar su fiabilidad en aplicaciones del mundo real. Herramientas como las matrices de confusión transforman métricas en bruto en información útil, impulsando la mejora continua y fomentando la confianza en los sistemas de IA.
           </p>
         </div>
 
         {/* Image Source */}
         <div className="text-sm text-center text-[#555] mb-8" data-aos="fade-up" data-aos-delay="1000">
-          <span className="font-semibold text-[#333]">Source: </span>
+          <span className="font-semibold text-[#333]">Fuente: </span>
           <a
             href="https://towardsdatascience.com/evaluating-model-performance"
             target="_blank"

@@ -18,17 +18,17 @@ export default function CNNSection() {
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <h2 className="text-4xl font-semibold text-center text-[#333] mb-10" data-aos="fade-up">
-          CNN Architectures
+          Arquitecturas de CNN
         </h2>
 
         {/* LeNet-5 */}
         <div className="mb-10" data-aos="fade-up" data-aos-delay="0">
           <h3 className="text-2xl font-semibold text-[#333] mb-4">LeNet-5 (1998)</h3>
           <p className="text-lg text-[#555] mb-6 text-justify">
-            LeNet-5 is a pioneering convolutional network that was designed to classify handwritten digits. It was applied for automatic digit recognition in cheques using 32x32 pixel grayscale images.
+            LeNet-5 es una red convolucional pionera diseñada para clasificar dígitos escritos a mano. Se aplicó para el reconocimiento automático de dígitos en cheques utilizando imágenes en escala de grises de 32x32 píxeles.
           </p>
           <p className="text-lg text-[#555] mb-6 text-justify">
-            Although LeNet-5 demonstrated strong performance, its ability to process higher-resolution images is limited by computational resources.
+            Aunque LeNet-5 demostró un rendimiento sólido, su capacidad para procesar imágenes de mayor resolución está limitada por los recursos computacionales.
           </p>
         </div>
 
@@ -36,10 +36,10 @@ export default function CNNSection() {
         <div className="mb-10" data-aos="fade-up" data-aos-delay="100">
           <h3 className="text-2xl font-semibold text-[#333] mb-4">AlexNet (2012)</h3>
           <p className="text-lg text-[#555] mb-6 text-justify">
-            AlexNet, introduced in 2012, was a breakthrough in deep learning for image classification, using five layers to learn patterns from large datasets. It made a significant impact on the field of computer vision.
+            AlexNet, introducido en 2012, fue un avance en el aprendizaje profundo para la clasificación de imágenes, utilizando cinco capas para aprender patrones de grandes conjuntos de datos. Tuvo un impacto significativo en el campo de la visión por computadora.
           </p>
           <p className="text-lg text-[#555] mb-6 text-justify">
-            In domains like legal document analysis, AlexNet could be used to classify images of contracts or court documents, improving workflow efficiency.
+            En dominios como el análisis de documentos legales, AlexNet podría utilizarse para clasificar imágenes de contratos o documentos judiciales, mejorando la eficiencia del flujo de trabajo.
           </p>
         </div>
 
@@ -47,10 +47,10 @@ export default function CNNSection() {
         <div className="mb-10" data-aos="fade-up" data-aos-delay="200">
           <h3 className="text-2xl font-semibold text-[#333] mb-4">ResNet (2015)</h3>
           <p className="text-lg text-[#555] mb-6 text-justify">
-            ResNet addresses the vanishing gradient problem with residual connections that allow for deeper networks. This enables it to learn more effectively even with many layers.
+            ResNet aborda el problema del desvanecimiento del gradiente con conexiones residuales que permiten redes más profundas. Esto le permite aprender de manera más efectiva incluso con muchas capas.
           </p>
           <p className="text-lg text-[#555] mb-6 text-justify">
-            In tourism, ResNet could classify images of destinations, helping travel companies target their marketing efforts and recommend locations to travelers.
+            En turismo, ResNet podría clasificar imágenes de destinos, ayudando a las empresas de viajes a dirigir sus esfuerzos de marketing y recomendar lugares a los viajeros.
           </p>
         </div>
 
@@ -58,10 +58,10 @@ export default function CNNSection() {
         <div className="mb-10" data-aos="fade-up" data-aos-delay="300">
           <h3 className="text-2xl font-semibold text-[#333] mb-4">GoogLeNet (2014)</h3>
           <p className="text-lg text-[#555] mb-6 text-justify">
-            GoogLeNet, introduced in 2014, uses Inception modules for efficiency, allowing the network to process information at multiple levels while reducing computational load.
+            GoogLeNet, introducido en 2014, utiliza módulos Inception para mejorar la eficiencia, permitiendo que la red procese información en múltiples niveles mientras reduce la carga computacional.
           </p>
           <p className="text-lg text-[#555] mb-6 text-justify">
-            In retail, GoogLeNet could analyze product images for categorization and inventory management, streamlining operations and improving product search accuracy.
+            En el comercio minorista, GoogLeNet podría analizar imágenes de productos para la categorización y la gestión de inventarios, optimizando las operaciones y mejorando la precisión de la búsqueda de productos.
           </p>
         </div>
 
@@ -69,10 +69,10 @@ export default function CNNSection() {
         <div className="mb-10" data-aos="fade-up" data-aos-delay="400">
           <h3 className="text-2xl font-semibold text-[#333] mb-4">MobileNet (2017)</h3>
           <p className="text-lg text-[#555] mb-6 text-justify">
-            MobileNet is optimized for mobile devices, utilizing depth-wise separable convolutions to reduce parameters while maintaining accuracy.
+            MobileNet está optimizado para dispositivos móviles, utilizando convoluciones separables en profundidad para reducir parámetros mientras mantiene la precisión.
           </p>
           <p className="text-lg text-[#555] mb-6 text-justify">
-            In HR, MobileNet could be used to classify resumes or analyze job applicants&apos; profiles, making it easier for HR teams to evaluate qualifications.
+            En recursos humanos, MobileNet podría utilizarse para clasificar currículos o analizar perfiles de solicitantes de empleo, facilitando la evaluación de las calificaciones por parte de los equipos de RRHH.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function CNNSection() {
         <div data-aos="fade-up" data-aos-delay="500">
           <h3 className="text-2xl font-semibold text-[#333] mb-4">VGG-16 (2014)</h3>
           <p className="text-lg text-[#555] mb-6 text-justify">
-            VGG-16 is a deep CNN with 16 layers, designed to achieve high accuracy in image classification and object detection tasks. It has been widely adopted in research and practical applications.
+            VGG-16 es una CNN profunda con 16 capas, diseñada para lograr alta precisión en tareas de clasificación de imágenes y detección de objetos. Ha sido ampliamente adoptada en investigaciones y aplicaciones prácticas.
           </p>
         </div>
       </div>

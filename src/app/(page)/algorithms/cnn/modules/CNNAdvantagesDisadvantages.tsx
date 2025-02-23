@@ -10,10 +10,10 @@ export default function CNNAdvantagesDisadvantages() {
   useEffect(() => {
     // Initialize AOS with the new configuration
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Trigger animation only once
-      offset: 100, // Adjust the offset for triggering
-      debounceDelay: 50, // Faster trigger when scrolling
+      duration: 1000, 
+      once: true, 
+      offset: 100, 
+      debounceDelay: 50,
     });
 
     const timer = setTimeout(() => setIsVisible(true), 200);
@@ -32,7 +32,7 @@ export default function CNNAdvantagesDisadvantages() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Advantages and Disadvantages of Convolutional Neural Networks
+          Ventajas y Desventajas de las Redes Neuronales Convolucionales
         </h1>
 
         <p
@@ -40,31 +40,31 @@ export default function CNNAdvantagesDisadvantages() {
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          Convolutional Neural Networks (CNNs) are powerful tools in the field of machine learning, excelling in image recognition and computer vision tasks. However, like any technology, they present both strengths and limitations. Understanding these aspects is crucial for determining their suitability for specific applications.
+          Las Redes Neuronales Convolucionales (CNN) son herramientas poderosas en el campo del aprendizaje automático, sobresaliendo en tareas de reconocimiento de imágenes y visión por computadora. Sin embargo, como cualquier tecnología, presentan tanto fortalezas como limitaciones. Comprender estos aspectos es crucial para determinar su idoneidad para aplicaciones específicas.
         </p>
 
         <div className="flex flex-col lg:flex-row lg:space-x-8 max-w-3xl mx-auto">
           {/* Advantages */}
           <div className="flex-1 mb-8 lg:mb-0" data-aos="fade-right" data-aos-delay="500">
             <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
-              Advantages
+              Ventajas
             </h2>
             <ul className="space-y-4">
               {[{
-                title: "State-of-the-Art Results",
-                description: "CNNs excel in image recognition tasks, delivering state-of-the-art performance in domains like healthcare, autonomous driving, and security.",
+                title: "Resultados de Última Generación",
+                description: "Las CNN sobresalen en tareas de reconocimiento de imágenes, ofreciendo un rendimiento de última generación en dominios como la salud, la conducción autónoma y la seguridad.",
               },
               {
-                title: "Automatic Feature Learning",
-                description: "They automatically learn hierarchical features from raw data, eliminating the need for manual feature extraction and engineering.",
+                title: "Aprendizaje Automático de Características",
+                description: "Aprenden automáticamente características jerárquicas a partir de datos en bruto, eliminando la necesidad de extracción y ingeniería de características manual.",
               },
               {
-                title: "Computational Efficiency",
-                description: "When optimized for GPUs, CNNs process large datasets efficiently, making them suitable for high-performance applications.",
+                title: "Eficiencia Computacional",
+                description: "Cuando se optimizan para GPUs, las CNN procesan grandes conjuntos de datos de manera eficiente, lo que las hace adecuadas para aplicaciones de alto rendimiento.",
               },
               {
-                title: "Robustness",
-                description: "CNNs demonstrate robustness to noise and variations in data, ensuring reliable performance across diverse scenarios.",
+                title: "Robustez",
+                description: "Las CNN demuestran robustez frente al ruido y variaciones en los datos, asegurando un rendimiento confiable en diversos escenarios.",
               }].map((advantage, index) => (
                 <li
                   key={index}
@@ -89,20 +89,20 @@ export default function CNNAdvantagesDisadvantages() {
           {/* Disadvantages */}
           <div className="flex-1" data-aos="fade-left" data-aos-delay="500">
             <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
-              Disadvantages
+              Desventajas
             </h2>
             <ul className="space-y-4">
               {[{
-                title: "High Computational Resources",
-                description: "Training CNNs on large datasets requires substantial computational power, often necessitating specialized hardware like GPUs or TPUs.",
+                title: "Altos Recursos Computacionales",
+                description: "Entrenar CNN en grandes conjuntos de datos requiere un poder computacional sustancial, a menudo necesitando hardware especializado como GPUs o TPUs.",
               },
               {
-                title: "Lack of Interpretability",
-                description: "CNNs operate as black-box models, making it challenging to interpret their decision-making processes.",
+                title: "Falta de Interpretabilidad",
+                description: "Las CNN operan como modelos de caja negra, lo que dificulta interpretar sus procesos de toma de decisiones.",
               },
               {
-                title: "Large Data Requirements",
-                description: "Effective training demands large amounts of labeled data, which can be a limitation in domains with small datasets.",
+                title: "Grandes Requisitos de Datos",
+                description: "El entrenamiento efectivo requiere grandes cantidades de datos etiquetados, lo que puede ser una limitación en dominios con conjuntos de datos pequeños.",
               }].map((disadvantage, index) => (
                 <li
                   key={index}
@@ -130,7 +130,7 @@ export default function CNNAdvantagesDisadvantages() {
           data-aos="fade-up"
           data-aos-delay="900"
         >
-          While CNNs offer unparalleled performance in various applications, their computational and data demands highlight the importance of evaluating trade-offs when choosing machine learning models. By balancing these factors, CNNs can be effectively leveraged to solve complex problems.
+          Si bien las CNN ofrecen un rendimiento inigualable en diversas aplicaciones, sus demandas computacionales y de datos destacan la importancia de evaluar los compromisos al elegir modelos de aprendizaje automático. Al equilibrar estos factores, las CNN pueden aprovecharse eficazmente para resolver problemas complejos.
         </p>
       </div>
     </section>

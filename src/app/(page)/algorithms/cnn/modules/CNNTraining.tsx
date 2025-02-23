@@ -19,39 +19,39 @@ export default function CNNTraining() {
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <h2 className="text-4xl font-semibold text-center text-[#333] mb-10" data-aos="fade-up">
-          Training CNNs
+          Entrenamiento de CNN
         </h2>
 
         {/* Text Content */}
         <div className="mb-8">
           <h3 className="text-3xl font-medium text-[#444] mb-4" data-aos="fade-up">
-            Overview of the Training Process
+            Visión General del Proceso de Entrenamiento
           </h3>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="200">
-            Convolutional Neural Networks (CNNs) are trained using supervised learning techniques, requiring labeled data to learn from. The main goal is to minimize the difference between predicted and actual values using a loss function. The process involves multiple steps to ensure that the network learns accurate representations from the data.
+            Las Redes Neuronales Convolucionales (CNN) se entrenan utilizando técnicas de aprendizaje supervisado, que requieren datos etiquetados para aprender. El objetivo principal es minimizar la diferencia entre los valores predichos y los reales utilizando una función de pérdida. El proceso implica múltiples pasos para asegurar que la red aprenda representaciones precisas de los datos.
           </p>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="400">
-            Key elements in training a CNN include preparing the data, selecting an appropriate loss function, using optimizers to adjust weights, and applying backpropagation to fine-tune the network. These elements work together to refine the model over multiple iterations, improving its accuracy with each pass.
+            Los elementos clave en el entrenamiento de una CNN incluyen preparar los datos, seleccionar una función de pérdida apropiada, utilizar optimizadores para ajustar los pesos y aplicar retropropagación para afinar la red. Estos elementos trabajan juntos para refinar el modelo a lo largo de múltiples iteraciones, mejorando su precisión con cada pasada.
           </p>
 
           <h3 className="text-2xl font-medium text-[#444] mb-4" data-aos="fade-up" data-aos-delay="600">
-            Key Steps in Training a CNN
+            Pasos Clave en el Entrenamiento de una CNN
           </h3>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="800">
-            The training process is divided into four main steps:
+            El proceso de entrenamiento se divide en cuatro pasos principales:
           </p>
           <ul className="text-lg text-[#555] mb-6 pl-6 list-disc" data-aos="fade-up" data-aos-delay="1000">
-            <li><strong>Data Preparation:</strong> Images are preprocessed and normalized to ensure uniformity across the dataset.</li>
-            <li><strong>Loss Function:</strong> The loss function measures the error between predicted and actual labels. Common loss functions include cross-entropy for classification tasks.</li>
-            <li><strong>Optimizer:</strong> The optimizer adjusts the weights of the network to minimize the loss function. Popular optimizers include Stochastic Gradient Descent (SGD) and Adam.</li>
-            <li><strong>Backpropagation:</strong> This technique calculates gradients of the loss function and updates the model weights to reduce errors.</li>
+            <li><strong>Preparación de Datos:</strong> Las imágenes se preprocesan y normalizan para asegurar uniformidad en el conjunto de datos.</li>
+            <li><strong>Función de Pérdida:</strong> La función de pérdida mide el error entre las etiquetas predichas y reales. Las funciones de pérdida comunes incluyen la entropía cruzada para tareas de clasificación.</li>
+            <li><strong>Optimizador:</strong> El optimizador ajusta los pesos de la red para minimizar la función de pérdida. Los optimizadores populares incluyen el Descenso de Gradiente Estocástico (SGD) y Adam.</li>
+            <li><strong>Retropropagación:</strong> Esta técnica calcula los gradientes de la función de pérdida y actualiza los pesos del modelo para reducir los errores.</li>
           </ul>
 
           <h3 className="text-2xl font-medium text-[#444] mb-4" data-aos="fade-up" data-aos-delay="1200">
-            Common Optimization Algorithms
+            Algoritmos de Optimización Comunes
           </h3>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="1400">
-            During training, optimization algorithms like Stochastic Gradient Descent (SGD) and Adam play a crucial role in minimizing the loss function. The learning rate is an important parameter that determines the size of the steps taken during optimization. A well-tuned learning rate can significantly speed up training and improve model performance.
+            Durante el entrenamiento, algoritmos de optimización como el Descenso de Gradiente Estocástico (SGD) y Adam desempeñan un papel crucial en la minimización de la función de pérdida. La tasa de aprendizaje es un parámetro importante que determina el tamaño de los pasos dados durante la optimización. Una tasa de aprendizaje bien ajustada puede acelerar significativamente el entrenamiento y mejorar el rendimiento del modelo.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export default function CNNTraining() {
           <div className="flex justify-center mb-4">
             <Image
               src="/images/491280-fig-02.svg"
-              alt="CNN Training Process"
+              alt="Proceso de Entrenamiento de CNN"
               width={900}
               height={450}
               className="rounded-lg"
@@ -70,7 +70,7 @@ export default function CNNTraining() {
 
         {/* Image Source */}
         <div className="text-sm text-center text-[#555] mb-8" data-aos="fade-up" data-aos-delay="1800">
-          <span className="font-semibold text-[#333]">Source: </span>
+          <span className="font-semibold text-[#333]">Fuente: </span>
           <a
             href="https://www.analog.com/en/resources/analog-dialogue/articles/training-convolutional-neural-networks-what-is-machine-learning-part-2.html"
             target="_blank"
@@ -84,7 +84,7 @@ export default function CNNTraining() {
         {/* Bottom Text */}
         <div className="mb-8 text-justify" data-aos="fade-up" data-aos-delay="2000">
           <p className="text-lg text-[#555]">
-            Training a CNN is a critical part of the machine learning process, as it allows the network to learn the necessary patterns from labeled data. Proper data preparation, loss function selection, and optimization techniques are essential for building a robust and efficient model.
+            El entrenamiento de una CNN es una parte crítica del proceso de aprendizaje automático, ya que permite que la red aprenda los patrones necesarios a partir de datos etiquetados. Una preparación adecuada de los datos, la selección de la función de pérdida y las técnicas de optimización son esenciales para construir un modelo robusto y eficiente.
           </p>
         </div>
       </div>

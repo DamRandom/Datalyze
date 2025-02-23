@@ -19,26 +19,26 @@ export default function CNNSection() {
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <h2 className="text-4xl font-semibold text-center text-[#333] mb-10" data-aos="fade-up">
-          What Are CNNs?
+          ¿Qué son las CNN?
         </h2>
 
         {/* Text Content */}
         <div className="mb-8">
           <h3 className="text-3xl font-medium text-[#444] mb-4" data-aos="fade-up">
-            Understanding CNNs
+            Comprendiendo las CNN
           </h3>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="200">
-            Convolutional Neural Networks, or CNNs, are a class of deep learning algorithms primarily used for processing and recognizing visual data. Their design is inspired by the way the human brain processes visual information. CNNs are able to detect patterns and spatial dependencies in images through their hierarchical structure, making them highly effective at tasks such as image classification, object detection, and facial recognition.
+            Las Redes Neuronales Convolucionales, o CNN, son una clase de algoritmos de aprendizaje profundo que se utilizan principalmente para procesar y reconocer datos visuales. Su diseño está inspirado en la forma en que el cerebro humano procesa la información visual. Las CNN pueden detectar patrones y dependencias espaciales en las imágenes a través de su estructura jerárquica, lo que las hace muy efectivas en tareas como la clasificación de imágenes, la detección de objetos y el reconocimiento facial.
           </p>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="400">
-            The strength of CNNs lies in their ability to automatically learn features from raw input images, eliminating the need for manual feature extraction. This is accomplished through multiple layers: convolutional layers that apply filters to capture features, pooling layers that reduce computational load, and fully connected layers that perform the final classification after learning the features.
+            La fortaleza de las CNN radica en su capacidad para aprender automáticamente características de imágenes de entrada sin procesar, eliminando la necesidad de extracción manual de características. Esto se logra a través de múltiples capas: capas de convolución que aplican filtros para capturar características, capas de agrupamiento que reducen la carga computacional y capas completamente conectadas que realizan la clasificación final después de aprender las características.
           </p>
 
           <h3 className="text-2xl font-medium text-[#444] mb-4" data-aos="fade-up" data-aos-delay="600">
-            Key Components
+            Componentes Clave
           </h3>
           <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="800">
-            CNNs are built on a series of components that work together to process images in a way that mimics human visual perception. The <strong>convolutional layers</strong> apply filters to detect various features like <strong>edges</strong> and <strong>textures</strong>. <strong>Pooling layers</strong> then reduce the spatial dimensions, making the process more computationally efficient without losing crucial information. The <strong>activation functions</strong> add non-linearity, allowing CNNs to learn more complex patterns. Finally, <strong>fully connected layers</strong> are responsible for classifying the learned features into specific categories.
+            Las CNN se construyen sobre una serie de componentes que trabajan juntos para procesar imágenes de una manera que imita la percepción visual humana. Las <strong>capas de convolución</strong> aplican filtros para detectar varias características como <strong>bordes</strong> y <strong>texturas</strong>. Las <strong>capas de agrupamiento</strong> luego reducen las dimensiones espaciales, haciendo que el proceso sea más eficiente computacionalmente sin perder información crucial. Las <strong>funciones de activación</strong> añaden no linealidad, permitiendo que las CNN aprendan patrones más complejos. Finalmente, las <strong>capas completamente conectadas</strong> son responsables de clasificar las características aprendidas en categorías específicas.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function CNNSection() {
           <div className="flex justify-center mb-4">
             <Image
               src="/images/1_vkQ0hXDaQv57sALXAJquxA.webp"
-              alt="CNN Architecture"
+              alt="Arquitectura de la CNN"
               width={900}
               height={450}
               className="rounded-lg"
@@ -57,7 +57,7 @@ export default function CNNSection() {
 
         {/* Image Source */}
         <div className="text-sm text-center text-[#555] mb-8" data-aos="fade-up" data-aos-delay="1200">
-          <span className="font-semibold text-[#333]">Source: </span>
+          <span className="font-semibold text-[#333]">Fuente: </span>
           <a
             href="https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53"
             target="_blank"
@@ -71,7 +71,7 @@ export default function CNNSection() {
         {/* Bottom Text */}
         <div className="mb-8 text-justify" data-aos="fade-up" data-aos-delay="1400">
           <p className="text-lg text-[#555]">
-            CNNs have become a fundamental tool in the field of computer vision, enabling machines to analyze and understand visual data. Their ability to learn and extract features automatically, without the need for extensive human intervention, has made them indispensable in many real-world applications.
+            Las CNN se han convertido en una herramienta fundamental en el campo de la visión por computadora, permitiendo a las máquinas analizar y comprender datos visuales. Su capacidad para aprender y extraer características automáticamente, sin necesidad de una extensa intervención humana, las ha hecho indispensables en muchas aplicaciones del mundo real.
           </p>
         </div>
       </div>
