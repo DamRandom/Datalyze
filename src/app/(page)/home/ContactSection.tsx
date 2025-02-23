@@ -4,26 +4,29 @@ import 'aos/dist/aos.css';
 
 const ContactSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     AOS.init();
   }, []);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); 
-    setIsModalOpen(true); 
-    e.currentTarget.reset(); 
+    e.preventDefault();
+    setIsLoading(true); // Muestra el spinner
+
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsModalOpen(true);
+    }, 1000); // Simula el retraso antes de mostrar el modal
+
+    e.currentTarget.reset();
   };
 
   return (
     <section className="min-h-screen py-12 bg-[#e4e4e4] flex items-center">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center lg:items-start justify-between">
         {/* Texto descriptivo */}
-        <div
-          className="lg:w-1/2 mb-8 lg:mb-0"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
+        <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-up" data-aos-duration="1000">
           <h2 className="text-4xl font-semibold text-[#1E293B] mb-2">
             ¿Tienes una pregunta?
           </h2>
@@ -31,10 +34,7 @@ const ContactSection = () => {
             Contáctanos en cualquier momento
           </p>
           <p className="text-lg text-[#475569] leading-relaxed text-justify lg:pr-6">
-            Nuestro equipo está aquí para ayudarte con cualquier consulta o 
-            comentario que puedas tener. Ya sea sobre algoritmos, predicciones o 
-            características, no dudes en ponerte en contacto. Valoramos tu 
-            opinión y estamos dedicados a proporcionar el mejor soporte posible.
+            Nuestro equipo está aquí para ayudarte con cualquier consulta o comentario que puedas tener. Ya sea sobre algoritmos, predicciones o características, no dudes en ponerte en contacto. Valoramos tu opinión y estamos dedicados a proporcionar el mejor soporte posible.
           </p>
         </div>
 
@@ -47,10 +47,7 @@ const ContactSection = () => {
           className="lg:w-1/2 bg-white shadow-lg rounded-lg p-8 transition-all duration-300 hover:shadow-xl"
         >
           <div className="mb-6">
-            <label
-              htmlFor="email"
-              className="block text-[#1E293B] text-sm font-medium mb-2"
-            >
+            <label htmlFor="email" className="block text-[#1E293B] text-sm font-medium mb-2">
               Dirección de Correo Electrónico
             </label>
             <input
@@ -62,10 +59,7 @@ const ContactSection = () => {
             />
           </div>
           <div className="mb-6">
-            <label
-              htmlFor="message"
-              className="block text-[#1E293B] text-sm font-medium mb-2"
-            >
+            <label htmlFor="message" className="block text-[#1E293B] text-sm font-medium mb-2">
               Mensaje
             </label>
             <textarea
@@ -85,13 +79,21 @@ const ContactSection = () => {
         </form>
       </div>
 
-      {/* Modal */}
+      {/* Spinner de carga */}
+      {isLoading && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="flex flex-col items-center">
+            <div className="loader mb-4 border-4 border-gray-300 border-t-[#1E293B] rounded-full w-12 h-12 animate-spin"></div>
+            <p className="text-white">Enviando mensaje...</p>
+          </div>
+        </div>
+      )}
+
+      {/* Modal con animación */}
       {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white rounded-lg shadow-lg p-6 w-80 text-center">
-            <h3 className="text-lg font-semibold text-[#1E293B] mb-4">
-              ¡Mensaje enviado!
-            </h3>
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 animate-fadeIn">
+          <div className="bg-white rounded-lg shadow-lg p-6 w-80 text-center transform transition-transform duration-300 animate-scaleIn">
+            <h3 className="text-lg font-semibold text-[#1E293B] mb-4">¡Mensaje enviado!</h3>
             <p className="text-sm text-[#475569] mb-4">
               Su mensaje ha sido enviado. Alguien se pondrá en contacto con usted a través del Gmail proporcionado.
             </p>
