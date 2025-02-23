@@ -17,16 +17,16 @@ const ContactSection = () => {
           data-aos-duration="1000"
         >
           <h2 className="text-4xl font-semibold text-[#1E293B] mb-2">
-            Have a Question?
+            ¿Tienes una pregunta?
           </h2>
           <p className="text-lg text-[#475569] italic font-light mb-6">
-            Contact Us Anytime
+            Contáctanos en cualquier momento
           </p>
           <p className="text-lg text-[#475569] leading-relaxed text-justify lg:pr-6">
-            Our team is here to assist you with any inquiries or feedback you may 
-            have. Whether it’s about algorithms, predictions, or features, don’t 
-            hesitate to reach out. We value your input and are dedicated to providing 
-            the best support possible.
+            Nuestro equipo está aquí para ayudarte con cualquier consulta o 
+            comentario que puedas tener. Ya sea sobre algoritmos, predicciones o 
+            características, no dudes en ponerte en contacto. Valoramos tu 
+            opinión y estamos dedicados a proporcionar el mejor soporte posible.
           </p>
         </div>
 
@@ -42,13 +42,13 @@ const ContactSection = () => {
               htmlFor="email"
               className="block text-[#1E293B] text-sm font-medium mb-2"
             >
-              Email Address
+              Dirección de Correo Electrónico
             </label>
             <input
               type="email"
               id="email"
               className="w-full px-4 py-2 border border-gray-300 rounded-lg text-[#475569] focus:outline-none focus:ring-2 focus:ring-[#1E293B]"
-              placeholder="Your email"
+              placeholder="Tu correo electrónico"
               required
             />
           </div>
@@ -57,13 +57,13 @@ const ContactSection = () => {
               htmlFor="message"
               className="block text-[#1E293B] text-sm font-medium mb-2"
             >
-              Message
+              Mensaje
             </label>
             <textarea
               id="message"
               rows={5}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg text-[#475569] focus:outline-none focus:ring-2 focus:ring-[#1E293B]"
-              placeholder="Write your message here..."
+              placeholder="Escribe tu mensaje aquí..."
               required
             />
           </div>
@@ -71,7 +71,7 @@ const ContactSection = () => {
             type="submit"
             className="w-full bg-[#1E293B] text-white py-3 px-4 rounded-lg font-medium hover:bg-[#475569] transition-all duration-300"
           >
-            Send Message
+            Enviar Mensaje
           </button>
         </form>
       </div>
