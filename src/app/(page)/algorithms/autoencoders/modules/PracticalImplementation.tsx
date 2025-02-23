@@ -18,23 +18,24 @@ export default function PracticalImplementation() {
       <div className="max-w-5xl mx-auto">
         {/* Title */}
         <h2 className="text-4xl font-semibold text-center text-[#333] mb-10" data-aos="fade-up">
-          Practical Implementation
+          Implementación Práctica
         </h2>
 
         {/* Introductory Paragraph */}
         <p className="text-lg text-[#555] text-justify mb-8" data-aos="fade-up">
-          Building an autoencoder involves multiple steps, from data preprocessing to training and evaluation. In this
-          section, we will walk through the process of creating a simple autoencoder using TensorFlow/Keras, a widely
-          used machine learning framework.
+          Construir un autoencoder implica múltiples pasos, desde la preprocesamiento de datos hasta el entrenamiento y la
+          evaluación. En esta sección, recorreremos el proceso de crear un autoencoder simple utilizando TensorFlow/Keras, un
+          marco de aprendizaje automático ampliamente utilizado.
         </p>
 
         {/* Step 1: Data Preprocessing */}
         <article className="mb-12" data-aos="fade-up">
-          <h3 className="text-3xl font-medium text-[#444] mb-4">1. Data Preprocessing</h3>
+          <h3 className="text-3xl font-medium text-[#444] mb-4">1. Preprocesamiento de Datos</h3>
           <p className="text-lg text-[#555] text-justify">
-            Before training the autoencoder, the input data needs to be normalized and prepared. For example, in image
-            processing, pixel values are often scaled to a range between 0 and 1. Additionally, the data is typically
-            split into training and validation sets to monitor the model&apos;s performance during training.
+            Antes de entrenar el autoencoder, los datos de entrada deben normalizarse y prepararse. Por ejemplo, en el
+            procesamiento de imágenes, los valores de los píxeles a menudo se escalan a un rango entre 0 y 1. Además, los
+            datos se dividen típicamente en conjuntos de entrenamiento y validación para monitorear el rendimiento del
+            modelo durante el entrenamiento.
           </p>
           <div className="bg-[#f4f4f4] p-4 mt-4 rounded-md">
             <pre className="text-sm text-[#333] overflow-x-auto">
@@ -55,10 +56,10 @@ x_test = x_test.reshape((x_test.shape[0], -1))`}
 
         {/* Step 2: Building the Autoencoder */}
         <article className="mb-12" data-aos="fade-up" data-aos-delay="200">
-          <h3 className="text-3xl font-medium text-[#444] mb-4">2. Building the Autoencoder</h3>
+          <h3 className="text-3xl font-medium text-[#444] mb-4">2. Construyendo el Autoencoder</h3>
           <p className="text-lg text-[#555] text-justify">
-            An autoencoder consists of an encoder, a latent representation layer, and a decoder. TensorFlow/Keras allows
-            us to define these components using its functional API or Sequential model.
+            Un autoencoder consiste en un codificador, una capa de representación latente y un decodificador. TensorFlow/Keras
+            nos permite definir estos componentes utilizando su API funcional o modelo Secuencial.
           </p>
           <div className="bg-[#f4f4f4] p-4 mt-4 rounded-md">
             <pre className="text-sm text-[#333] overflow-x-auto">
@@ -86,11 +87,11 @@ autoencoder.summary()`}
 
         {/* Step 3: Training and Evaluation */}
         <article className="mb-12" data-aos="fade-up" data-aos-delay="400">
-          <h3 className="text-3xl font-medium text-[#444] mb-4">3. Training and Evaluation</h3>
+          <h3 className="text-3xl font-medium text-[#444] mb-4">3. Entrenamiento y Evaluación</h3>
           <p className="text-lg text-[#555] text-justify">
-            The autoencoder is trained by minimizing the reconstruction loss, which measures the difference between the
-            input and the reconstructed output. After training, the model&apos;s performance can be evaluated using metrics
-            such as Mean Squared Error (MSE).
+            El autoencoder se entrena minimizando la pérdida de reconstrucción, que mide la diferencia entre la entrada y la
+            salida reconstruida. Después del entrenamiento, el rendimiento del modelo se puede evaluar utilizando métricas
+            como el Error Cuadrático Medio (MSE).
           </p>
           <div className="bg-[#f4f4f4] p-4 mt-4 rounded-md">
             <pre className="text-sm text-[#333] overflow-x-auto">

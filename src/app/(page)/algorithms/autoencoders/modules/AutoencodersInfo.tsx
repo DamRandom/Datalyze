@@ -21,7 +21,7 @@ const AutoencodersPage = () => {
           className="text-4xl font-semibold text-center text-[#333] mb-10"
           data-aos="fade-up"
         >
-          Introduction to Autoencoders
+          Introducción a los Autoencoders
         </h2>
 
         {/* Definition and Purpose */}
@@ -30,20 +30,14 @@ const AutoencodersPage = () => {
             className="text-3xl font-medium text-[#444] mb-4"
             data-aos="fade-up"
           >
-            Definition and Purpose
+            Definición y Propósito
           </h3>
           <p
             className="text-lg text-[#555] mb-6 text-justify"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Autoencoders are a type of artificial neural network designed for
-            unsupervised learning. They aim to learn efficient representations
-            of data by encoding the input into a compressed format and then
-            decoding it back to reconstruct the original input. This process
-            minimizes the difference between the input and its reconstruction,
-            making autoencoders powerful tools for dimensionality reduction,
-            anomaly detection, and more.
+            Los autoencoders son un tipo de red neuronal artificial diseñada para el aprendizaje no supervisado. Su objetivo es aprender representaciones eficientes de los datos al codificar la entrada en un formato comprimido y luego decodificarla para reconstruir la entrada original. Este proceso minimiza la diferencia entre la entrada y su reconstrucción, lo que convierte a los autoencoders en herramientas poderosas para la reducción de dimensionalidad, detección de anomalías y más.
           </p>
         </div>
 
@@ -53,20 +47,14 @@ const AutoencodersPage = () => {
             className="text-3xl font-medium text-[#444] mb-4"
             data-aos="fade-up"
           >
-            Brief History and Evolution
+            Breve Historia y Evolución
           </h3>
           <p
             className="text-lg text-[#555] mb-6 text-justify"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            The origins of autoencoders can be traced back to the 1980s, with
-            early work linking them to Principal Component Analysis (PCA). Over
-            time, advancements in deep learning, particularly during the
-            mid-2000s, enabled the development of deep autoencoder
-            architectures. These breakthroughs highlighted their ability to
-            capture complex, non-linear data patterns, paving the way for
-            applications across diverse domains.
+            Los orígenes de los autoencoders se remontan a la década de 1980, con trabajos iniciales que los vinculaban al Análisis de Componentes Principales (PCA). Con el tiempo, los avances en el aprendizaje profundo, particularmente durante mediados de la década de 2000, permitieron el desarrollo de arquitecturas de autoencoders profundos. Estos avances resaltaron su capacidad para capturar patrones de datos complejos y no lineales, allanando el camino para aplicaciones en diversos dominios.
           </p>
         </div>
 
@@ -76,19 +64,14 @@ const AutoencodersPage = () => {
             className="text-3xl font-medium text-[#444] mb-4"
             data-aos="fade-up"
           >
-            Comparison with PCA
+            Comparación con PCA
           </h3>
           <p
             className="text-lg text-[#555] mb-6 text-justify"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            While PCA is a linear technique that reduces dimensions by
-            maximizing variance along orthogonal axes, autoencoders leverage
-            neural networks to model non-linear relationships. This capability
-            makes autoencoders more versatile in capturing intricate data
-            patterns. However, PCA remains computationally efficient, whereas
-            autoencoders require more resources due to their training process.
+            Mientras que el PCA es una técnica lineal que reduce dimensiones maximizando la varianza a lo largo de ejes ortogonales, los autoencoders aprovechan redes neuronales para modelar relaciones no lineales. Esta capacidad hace que los autoencoders sean más versátiles en la captura de patrones de datos intrincados. Sin embargo, el PCA sigue siendo computacionalmente eficiente, mientras que los autoencoders requieren más recursos debido a su proceso de entrenamiento.
           </p>
         </div>
       </div>

@@ -1,4 +1,5 @@
 {
   "/page": "app/page.js",
+  "/(page)/algorithms/autoencoders/page": "app/(page)/algorithms/autoencoders/page.js",
   "/(page)/algorithms/autoarima/page": "app/(page)/algorithms/autoarima/page.js"
 }

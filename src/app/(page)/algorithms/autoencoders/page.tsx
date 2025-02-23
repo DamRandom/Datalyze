@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import NavBar from "@/components/common/NavBar";
 import Footer from "@/components/common/Footer";
 import AutoencodersInfo from "./modules/AutoencodersInfo";
@@ -11,16 +10,15 @@ import ApplicationsOfAutoencoders from "./modules/ApplicationsOfAutoencoders";
 import PracticalImplementation from "./modules/PracticalImplementation";
 import ChallengesAndConsiderations from "./modules/ChallengesAndConsiderations";
 
-
 const CNNPage: React.FC = () => {
     const sections = [
-        { id: "introduction", label: "Introduction" },
-        { id: "architecture", label: "Architecture"},
-        { id: "types", label: "Types"},
-        { id: "trainingProcess", label: "Training Process"},
-        { id: "applications", label: "applications"},
-        { id: "practicalImplementation", label: "Practical Implementation"},
-        { id: "challengesAndConsiderations", label: "Challenges"}
+        { id: "introduction", label: "Introducción" },
+        { id: "architecture", label: "Arquitectura" },
+        { id: "types", label: "Tipos" },
+        { id: "trainingProcess", label: "Proceso de Entrenamiento" },
+        { id: "applications", label: "Aplicaciones" },
+        { id: "practicalImplementation", label: "Implementación Práctica" },
+        { id: "challengesAndConsiderations", label: "Desafíos" }
     ];
 
     return (

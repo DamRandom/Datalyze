@@ -22,7 +22,7 @@ export default function AutoencodersArchitecture() {
                     className="text-4xl font-semibold text-center text-[#333] mb-10"
                     data-aos="fade-up"
                 >
-                    Architecture of an Autoencoder
+                    Arquitectura de un Autoencoder
                 </h2>
 
                 {/* Text Content */}
@@ -31,28 +31,28 @@ export default function AutoencodersArchitecture() {
                         className="text-3xl font-medium text-[#444] mb-4"
                         data-aos="fade-up"
                     >
-                        Encoder and Decoder
+                        Codificador y Decodificador
                     </h3>
                     <p
                         className="text-lg text-[#555] mb-6 text-justify"
                         data-aos="fade-up"
                         data-aos-delay="200"
                     >
-                        An autoencoder consists of two main components: the encoder and the decoder. The encoder compresses the input data into a smaller, more compact representation, often referred to as the latent space or bottleneck. The decoder then reconstructs the original data from this compressed representation. Together, they form a pipeline that seeks to preserve as much meaningful information as possible while reducing the dimensionality of the data.
+                        Un autoencoder consta de dos componentes principales: el codificador y el decodificador. El codificador comprime los datos de entrada en una representación más pequeña y compacta, a menudo denominada espacio latente o cuello de botella. Luego, el decodificador reconstruye los datos originales a partir de esta representación comprimida. Juntos, forman un flujo de trabajo que busca preservar la mayor cantidad de información significativa posible mientras reduce la dimensionalidad de los datos.
                     </p>
                     <h3
                         className="text-3xl font-medium text-[#444] mb-4"
                         data-aos="fade-up"
                         data-aos-delay="400"
                     >
-                        Latent Layer: The Bottleneck
+                        Capa Latente: El Cuello de Botella
                     </h3>
                     <p
                         className="text-lg text-[#555] mb-6 text-justify"
                         data-aos="fade-up"
                         data-aos-delay="600"
                     >
-                        The latent layer, often called the bottleneck, is a critical part of an autoencoder. This layer represents the compressed encoding of the input data. It forces the model to prioritize and retain only the most essential features, effectively filtering out noise or redundant information. The size and design of this layer heavily influence the performance and application of the autoencoder.
+                        La capa latente, a menudo llamada cuello de botella, es una parte crítica de un autoencoder. Esta capa representa la codificación comprimida de los datos de entrada. Obliga al modelo a priorizar y retener solo las características más esenciales, filtrando efectivamente el ruido o la información redundante. El tamaño y el diseño de esta capa influyen en gran medida en el rendimiento y la aplicación del autoencoder.
                     </p>
 
                     <h3
@@ -60,14 +60,14 @@ export default function AutoencodersArchitecture() {
                         data-aos="fade-up"
                         data-aos-delay="800"
                     >
-                        Layers and Activation Functions
+                        Capas y Funciones de Activación
                     </h3>
                     <p
                         className="text-lg text-[#555] mb-6 text-justify"
                         data-aos="fade-up"
                         data-aos-delay="1000"
                     >
-                        Autoencoders commonly utilize fully connected (dense) layers, though convolutional layers are preferred for image data. Activation functions like ReLU (Rectified Linear Unit) are often used in the encoder to introduce non-linearity, while the decoder may use sigmoid or tanh functions to ensure the output matches the range of the input data. The choice of layers and activations depends on the type of data and the problem being addressed.
+                        Los autoencoders utilizan comúnmente capas completamente conectadas (densas), aunque se prefieren las capas convolucionales para datos de imágenes. Funciones de activación como ReLU (Rectified Linear Unit) se utilizan a menudo en el codificador para introducir no linealidad, mientras que el decodificador puede utilizar funciones sigmoid o tanh para asegurar que la salida coincida con el rango de los datos de entrada. La elección de capas y activaciones depende del tipo de datos y del problema que se aborda.
                     </p>
                 </div>
 
@@ -76,7 +76,7 @@ export default function AutoencodersArchitecture() {
                     <div className="flex justify-center mb-4">
                         <Image
                             src="/images/AutoEcoders/autoencoder_diagram.avif"
-                            alt="Autoencoder Diagram"
+                            alt="Diagrama de Autoencoder"
                             width={900}
                             height={450}
                             className="rounded-lg"
@@ -90,14 +90,14 @@ export default function AutoencodersArchitecture() {
                     data-aos="fade-up"
                     data-aos-delay="1200"
                 >
-                    <span className="font-semibold text-[#333]">Source: </span>
+                    <span className="font-semibold text-[#333]">Fuente: </span>
                     <a
                         href="https://www.datacamp.com/tutorial/introduction-to-autoencoders"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-800"
                     >
-                        Introduction to Autoencoders: From The Basics to Advanced Applications in PyTorch
+                        Introducción a los Autoencoders: Desde lo Básico hasta Aplicaciones Avanzadas en PyTorch
                     </a>
                 </div>
 
@@ -108,7 +108,7 @@ export default function AutoencodersArchitecture() {
                     data-aos-delay="1400"
                 >
                     <p className="text-lg text-[#555]">
-                        The modular design of autoencoders allows them to be adapted for various tasks, from noise removal in images to feature extraction for complex datasets. Understanding their architecture is key to leveraging their full potential in real-world applications.
+                        El diseño modular de los autoencoders permite adaptarlos a diversas tareas, desde la eliminación de ruido en imágenes hasta la extracción de características para conjuntos de datos complejos. Comprender su arquitectura es clave para aprovechar su máximo potencial en aplicaciones del mundo real.
                     </p>
                 </div>
             </div>
