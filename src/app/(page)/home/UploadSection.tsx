@@ -4,9 +4,21 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FriedmanModal from "../../../components/common/FriedmanModal"; // Asegúrate de importar el modal
 
 const UploadSection = () => {
   const [file, setFile] = useState<File | null>(null);
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [currentMessage, setCurrentMessage] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  const processingMessages = [
+    "Limpiando datos...",
+    "Analizando datos...",
+    "Calculando resultados...",
+    "Generando visualización...",
+    "Listo para mostrar resultados!"
+  ];
 
   useEffect(() => {
     AOS.init(); // Inicializa AOS para animaciones
@@ -22,6 +34,24 @@ const UploadSection = () => {
       setFile(e.dataTransfer.files[0]);
       console.log("Archivo recibido:", e.dataTransfer.files[0]);
     }
+  };
+
+  const handleProcess = () => {
+    setIsProcessing(true);
+    let index = 0;
+
+    const interval = setInterval(() => {
+      if (index < processingMessages.length) {
+        setCurrentMessage(processingMessages[index]);
+        index++;
+      } else {
+        clearInterval(interval);
+        setTimeout(() => {
+          setIsProcessing(false);
+          setIsModalOpen(true);
+        }, 500); // Mostrar modal después de 500ms
+      }
+    }, 1000); // Cambia el mensaje cada segundo
   };
 
   return (
@@ -46,7 +76,7 @@ const UploadSection = () => {
             </p>
             <p className="text-sm text-[#9CA3AF]">Accepted formats: CSV, Excel, JSON</p>
 
-            {/* Botón de Procesar en la misma ubicación que el anterior */}
+            {/* Botón de Procesar */}
             <button
               className="mt-4 py-2 px-4 text-white rounded-lg"
               disabled={!file}
@@ -54,6 +84,7 @@ const UploadSection = () => {
                 backgroundColor: file ? "#1E293B" : "#a1acaf",
                 cursor: file ? "pointer" : "not-allowed",
               }}
+              onClick={handleProcess}
             >
               Procesar
             </button>
@@ -71,6 +102,19 @@ const UploadSection = () => {
           />
         </div>
       </div>
+
+      {/* Pantalla opaca y borrosa con spinner */}
+      {isProcessing && (
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+          <div className="flex flex-col items-center">
+            <div className="loader"></div> {/* Aquí puedes añadir un spinner CSS */}
+            <p className="text-white mt-4">{currentMessage}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Modal */}
+      <FriedmanModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 };
