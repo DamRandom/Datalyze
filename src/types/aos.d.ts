@@ -7,6 +7,7 @@ declare module "aos" {
       once?: boolean;
       mirror?: boolean;
       anchorPlacement?: string;
+      debounceDelay?: number;
     }
   
     interface AOS {
