@@ -6,29 +6,29 @@ const algorithms = [
   {
     title: 'AutoARIMA',
     subtitle: '‎ ',
-    description: 'Analyzes historical data to find patterns and make future predictions.',
-    details: 'AutoARIMA automatically determines the best parameters for ARIMA, optimizing forecasts for academic department data.',
+    description: 'Analiza datos históricos para encontrar patrones y hacer predicciones futuras.',
+    details: 'AutoARIMA determina automáticamente los mejores parámetros para ARIMA, optimizando pronósticos para datos del departamento académico.',
     link: '/algorithms/autoarima', 
   },
   {
     title: 'LSTM',
-    subtitle: 'Long Short-Term Memory',
-    description: 'Neural networks that retain information for long periods to predict complex sequences.',
-    details: 'LSTM networks are particularly effective for sequence prediction tasks, such as time series or text generation in academic contexts.',
+    subtitle: 'Memoria a Largo Plazo y Corto Plazo',
+    description: 'Redes neuronales que retienen información durante largos períodos para predecir secuencias complejas.',
+    details: 'Las redes LSTM son especialmente efectivas para tareas de predicción de secuencias, como series temporales o generación de texto en contextos académicos.',
     link: '/algorithms/lstm', 
   },
   {
     title: 'CNN',
-    subtitle: 'Convolutional Neural Network',
-    description: 'Specialized in identifying patterns within data, such as images or sequences.',
-    details: 'CNNs excel at feature extraction, making them suitable for analyzing structured academic datasets.',
+    subtitle: 'Red Neuronal Convolucional',
+    description: 'Especializadas en identificar patrones dentro de los datos, como imágenes o secuencias.',
+    details: 'Las CNN sobresalen en la extracción de características, lo que las hace adecuadas para analizar conjuntos de datos académicos estructurados.',
     link: '/algorithms/cnn', 
   },
   {
     title: 'AutoEncoders',
     subtitle: '‎ ',
-    description: 'Learn to compress and reconstruct data, helping to identify key patterns.',
-    details: 'AutoEncoders focus on unsupervised learning, reducing dimensionality while preserving essential features in academic department datasets.',
+    description: 'Aprenden a comprimir y reconstruir datos, ayudando a identificar patrones clave.',
+    details: 'Los AutoEncoders se enfocan en el aprendizaje no supervisado, reduciendo la dimensionalidad mientras preservan características esenciales en los conjuntos de datos del departamento académico.',
     link: '/algorithms/autoencoders',
   },
 ];
@@ -42,10 +42,10 @@ const AlgorithmSection = () => {
     <section className="min-h-screen py-12 bg-[#e4e4e4]">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-semibold text-[#1E293B] mb-8" data-aos="fade-up" data-aos-duration="1000">
-          Algorithms Used
+          Algoritmos Utilizados
         </h2>
         <p className="text-lg text-[#475569] mb-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-          Discover the algorithms applied for academic department prediction. Each has a unique approach to data analysis.
+          Descubre los algoritmos aplicados para la predicción del departamento académico. Cada uno tiene un enfoque único para el análisis de datos.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {algorithms.map((algorithm, index) => (
@@ -54,7 +54,7 @@ const AlgorithmSection = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={index * 200}
-              className="relative bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-300 pb-16 group hover:scale-105 hover:shadow-xl" // Added scale and shadow on hover
+              className="relative bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-300 pb-16 group hover:scale-105 hover:shadow-xl" // Agregada escala y sombra al pasar el ratón
             >
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-[#1E293B] mb-2">{algorithm.title}</h3>
@@ -65,7 +65,7 @@ const AlgorithmSection = () => {
                   href={algorithm.link} 
                   className="absolute bottom-6 right-6 text-[#4B5563] text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:underline"
                 >
-                  Read more...
+                  Leer más...
                 </a>
               </div>
             </div>
