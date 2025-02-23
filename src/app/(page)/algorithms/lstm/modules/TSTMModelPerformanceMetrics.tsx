@@ -20,14 +20,14 @@ export default function ModelPerformanceMetrics() {
                     className="text-4xl font-semibold text-[#333] mb-8"
                     data-aos="fade-up"
                 >
-                    Understanding Model Performance Metrics
+                    Entendiendo las Métricas de Rendimiento del Modelo
                 </h2>
                 <p
                     className="text-lg text-[#555] mb-8 text-justify"
                     data-aos="fade-up"
                     data-aos-delay="200"
                 >
-                    Evaluating a predictive model&apost;s performance is crucial to ensure its reliability and accuracy in real-world scenarios. Different metrics provide unique perspectives on how well the model&apost;s predictions align with actual outcomes. Below, we explore key performance metrics, their significance, and an example to contextualize these concepts.
+                    Evaluar el rendimiento de un modelo predictivo es crucial para asegurar su fiabilidad y precisión en escenarios del mundo real. Diferentes métricas ofrecen perspectivas únicas sobre cuán bien las predicciones del modelo se alinean con los resultados reales. A continuación, exploramos las métricas de rendimiento clave, su importancia y un ejemplo para contextualizar estos conceptos.
                 </p>
 
                 <div className="space-y-12">
@@ -38,16 +38,16 @@ export default function ModelPerformanceMetrics() {
                         data-aos-delay="400"
                     >
                         <h3 className="text-2xl font-semibold text-[#333] mb-4">
-                            Mean Squared Error (MSE)
+                            Error Cuadrático Medio (MSE)
                         </h3>
                         <p className="text-[#555] text-justify mb-4">
-                            MSE measures the average squared difference between predicted and actual values. It heavily penalizes larger errors, making it particularly sensitive to outliers. This metric is useful for tasks where minimizing large deviations is crucial, as it emphasizes significant discrepancies in predictions.
+                            El MSE mide la diferencia cuadrática media entre los valores predichos y los reales. Penaliza fuertemente los errores más grandes, lo que lo hace particularmente sensible a los valores atípicos. Esta métrica es útil para tareas donde minimizar grandes desviaciones es crucial, ya que enfatiza las discrepancias significativas en las predicciones.
                         </p>
                         <p className="text-[#555] text-justify mb-4">
-                            <strong>Example:</strong> If the model predicts a series of student performance scores, and the actual scores differ significantly for some students, the MSE will highlight those errors more prominently than other metrics.
+                            <strong>Ejemplo:</strong> Si el modelo predice una serie de puntajes de rendimiento de estudiantes, y los puntajes reales difieren significativamente para algunos estudiantes, el MSE destacará esos errores más prominentemente que otras métricas.
                         </p>
                         <div className="text-center text-[#333]">
-                            <strong>Example Result:</strong> MSE = 23302.59
+                            <strong>Resultado de Ejemplo:</strong> MSE = 23302.59
                         </div>
                     </div>
 
@@ -58,16 +58,16 @@ export default function ModelPerformanceMetrics() {
                         data-aos-delay="600"
                     >
                         <h3 className="text-2xl font-semibold text-[#333] mb-4">
-                            Mean Absolute Error (MAE)
+                            Error Absoluto Medio (MAE)
                         </h3>
                         <p className="text-[#555] text-justify mb-4">
-                            MAE calculates the average of the absolute differences between predicted and actual values. Unlike MSE, it treats all errors equally, regardless of magnitude, providing a more balanced view of overall prediction accuracy.
+                            El MAE calcula la media de las diferencias absolutas entre los valores predichos y los reales. A diferencia del MSE, trata todos los errores por igual, independientemente de su magnitud, proporcionando una visión más equilibrada de la precisión general de la predicción.
                         </p>
                         <p className="text-[#555] text-justify mb-4">
-                            <strong>Example:</strong> In forecasting enrollment numbers, if the model consistently overestimates or underestimates by a small margin, the MAE reflects these consistent deviations without exaggerating their impact.
+                            <strong>Ejemplo:</strong> En la previsión de números de matrícula, si el modelo constantemente sobreestima o subestima por un pequeño margen, el MAE refleja estas desviaciones consistentes sin exagerar su impacto.
                         </p>
                         <div className="text-center text-[#333]">
-                            <strong>Example Result:</strong> MAE = 110.67
+                            <strong>Resultado de Ejemplo:</strong> MAE = 110.67
                         </div>
                     </div>
 
@@ -78,16 +78,16 @@ export default function ModelPerformanceMetrics() {
                         data-aos-delay="800"
                     >
                         <h3 className="text-2xl font-semibold text-[#333] mb-4">
-                            Mean Absolute Percentage Error (MAPE)
+                            Error Absoluto Porcentual Medio (MAPE)
                         </h3>
                         <p className="text-[#555] text-justify mb-4">
-                            MAPE evaluates prediction accuracy in percentage terms, making it intuitive for interpreting results in a relative context. However, it can be sensitive to very small actual values, potentially inflating error percentages disproportionately.
+                            El MAPE evalúa la precisión de las predicciones en términos porcentuales, lo que lo hace intuitivo para interpretar resultados en un contexto relativo. Sin embargo, puede ser sensible a valores reales muy pequeños, lo que podría inflar desproporcionadamente los porcentajes de error.
                         </p>
                         <p className="text-[#555] text-justify mb-4">
-                            <strong>Example:</strong> When predicting attendance rates, MAPE helps express the error as a percentage, which is often more meaningful for stakeholders than absolute error values.
+                            <strong>Ejemplo:</strong> Al predecir tasas de asistencia, el MAPE ayuda a expresar el error como un porcentaje, lo que a menudo es más significativo para las partes interesadas que los valores de error absolutos.
                         </p>
                         <div className="text-center text-[#333]">
-                            <strong>Example Result:</strong> MAPE = 95.88%
+                            <strong>Resultado de Ejemplo:</strong> MAPE = 95.88%
                         </div>
                     </div>
                 </div>
@@ -99,10 +99,10 @@ export default function ModelPerformanceMetrics() {
                     data-aos-delay="1000"
                 >
                     <h3 className="text-2xl font-semibold text-[#333] mb-4">
-                        Why These Metrics Matter
+                        Por Qué Estas Métricas Son Importantes
                     </h3>
                     <p className="text-[#555] text-justify">
-                        Each metric offers distinct insights into model performance. MSE emphasizes large errors, MAE balances overall deviations, and MAPE provides percentage-based accuracy. Together, they form a comprehensive evaluation framework, enabling data-driven decisions and continuous model improvement.
+                        Cada métrica ofrece perspectivas distintas sobre el rendimiento del modelo. El MSE enfatiza los errores grandes, el MAE equilibra las desviaciones generales y el MAPE proporciona precisión basada en porcentajes. Juntas, forman un marco de evaluación integral, permitiendo decisiones basadas en datos y una mejora continua del modelo.
                     </p>
                 </div>
             </div>

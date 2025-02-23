@@ -18,48 +18,48 @@ export default function LSTMDataPreprocessing() {
             <div className="max-w-4xl mx-auto">
                 {/* Title */}
                 <h2 className="text-4xl font-semibold text-center text-[#333] mb-10" data-aos="fade-up">
-                    Data Preprocessing Workflow for LSTM Models
+                    Flujo de Trabajo de Preprocesamiento de Datos para Modelos LSTM
                 </h2>
 
                 {/* Text Content */}
                 <div className="mb-8">
                     <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="200">
-                        Preparing your data is a crucial step in training any machine learning model, especially LSTM networks. Proper preprocessing ensures that the data is in a suitable format, improving the model&apost;s accuracy and efficiency. Below are the key steps in the preprocessing pipeline for LSTM models:
+                        Preparar tus datos es un paso crucial en el entrenamiento de cualquier modelo de aprendizaje automático, especialmente en redes LSTM. Un preprocesamiento adecuado asegura que los datos estén en un formato adecuado, mejorando la precisión y eficiencia del modelo. A continuación, se presentan los pasos clave en la tubería de preprocesamiento para modelos LSTM:
                     </p>
 
                     <h4 className="text-2xl font-medium text-[#444] mb-4" data-aos="fade-up" data-aos-delay="400">
-                        Step 1: Feature and Label Separation
+                        Paso 1: Separación de Características y Etiquetas
                     </h4>
                     <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="600">
-                        The first step involves separating the dataset into features and labels. Features represent the input data, while labels are the target output. This step is essential as it allows the LSTM model to learn from the relevant patterns in the input features and predict the future values in the labels.
+                        El primer paso consiste en separar el conjunto de datos en características y etiquetas. Las características representan los datos de entrada, mientras que las etiquetas son la salida objetivo. Este paso es esencial ya que permite que el modelo LSTM aprenda de los patrones relevantes en las características de entrada y prediga los valores futuros en las etiquetas.
                     </p>
 
                     <h4 className="text-2xl font-medium text-[#444] mb-4" data-aos="fade-up" data-aos-delay="800">
-                        Step 2: Scaling Input and Output Data
+                        Paso 2: Escalado de Datos de Entrada y Salida
                     </h4>
                     <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="1000">
-                        To improve the model’s performance, it is necessary to scale the input and output data to a range that the model can efficiently process. The MinMaxScaler scales all the values to a range between 0 and 1, which helps the model converge faster and avoids issues with differing feature magnitudes.
+                        Para mejorar el rendimiento del modelo, es necesario escalar los datos de entrada y salida a un rango que el modelo pueda procesar de manera eficiente. El MinMaxScaler escala todos los valores a un rango entre 0 y 1, lo que ayuda al modelo a converger más rápido y evita problemas con diferentes magnitudes de características.
                     </p>
 
                     <h4 className="text-2xl font-medium text-[#444] mb-4" data-aos="fade-up" data-aos-delay="1200">
-                        Step 3: Creating Sliding Windows for Sequential Data
+                        Paso 3: Creación de Ventanas Deslizantes para Datos Secuenciales
                     </h4>
                     <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="1400">
-                        LSTM models are designed to work with sequential data, so creating sliding windows ensures that the model receives input sequences for training. This step involves generating sequences from the data, typically with a predefined window size that represents the number of previous time steps used to predict the next value.
+                        Los modelos LSTM están diseñados para trabajar con datos secuenciales, por lo que crear ventanas deslizantes asegura que el modelo reciba secuencias de entrada para el entrenamiento. Este paso implica generar secuencias a partir de los datos, típicamente con un tamaño de ventana predefinido que representa el número de pasos de tiempo anteriores utilizados para predecir el siguiente valor.
                     </p>
 
                     <h4 className="text-2xl font-medium text-[#444] mb-4" data-aos="fade-up" data-aos-delay="1600">
-                        Step 4: 3D Formatting for LSTM Input
+                        Paso 4: Formato 3D para la Entrada LSTM
                     </h4>
                     <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="1800">
-                        LSTM models expect input data in a specific 3D format: `[samples, timesteps, features]`. This step reshapes the data into this format, where `samples` are the number of sequences, `timesteps` are the number of time steps per sequence, and `features` are the number of features in each time step.
+                        Los modelos LSTM esperan que los datos de entrada estén en un formato específico 3D: `[samples, timesteps, features]`. Este paso remodela los datos a este formato, donde `samples` son el número de secuencias, `timesteps` son el número de pasos de tiempo por secuencia y `features` son el número de características en cada paso de tiempo.
                     </p>
 
                     <h4 className="text-2xl font-medium text-[#444] mb-4" data-aos="fade-up" data-aos-delay="2000">
-                        Why Preprocessing is Crucial
+                        Por Qué el Preprocesamiento es Crucial
                     </h4>
                     <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="2200">
-                        Proper preprocessing is essential for training an accurate and efficient LSTM model. Without adequate preprocessing, the model may struggle with noisy data, improper scaling, or irrelevant features, leading to poor performance. By following the steps outlined above, you ensure that the data is well-suited for learning complex patterns and making accurate predictions.
+                        Un preprocesamiento adecuado es esencial para entrenar un modelo LSTM preciso y eficiente. Sin un preprocesamiento adecuado, el modelo puede tener problemas con datos ruidosos, escalado inapropiado o características irrelevantes, lo que lleva a un rendimiento deficiente. Al seguir los pasos descritos anteriormente, aseguras que los datos sean adecuados para aprender patrones complejos y hacer predicciones precisas.
                     </p>
                 </div>
             </div>

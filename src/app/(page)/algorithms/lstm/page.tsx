@@ -13,12 +13,12 @@ import PracticalApplicationsOfLSTMs from "./modules/PracticalApplicationsOfLSTMs
 
 export default function HomePage() {
     const sections = [
-        { id: "introduction", label: "Introduction" },
-        { id: "features", label: "Features"},
-        { id: "parameters", label: "Parameters"},
-        { id: "trainingProcess", label: "Training"},
-        { id: "performanceMetrics", label: "Performance"},
-        { id: "practicalApplications", label: "Practical Applications"}
+        { id: "introduction", label: "Introducción" },
+        { id: "features", label: "Características" },
+        { id: "parameters", label: "Parámetros" },
+        { id: "trainingProcess", label: "Entrenamiento" },
+        { id: "performanceMetrics", label: "Rendimiento" },
+        { id: "practicalApplications", label: "Aplicaciones Prácticas" }
     ];
 
     return (
@@ -32,25 +32,25 @@ export default function HomePage() {
                     <LSTMIntroduction />
                 </section>
                 <section id="features">
-                    <LSTMFeaturesSection/>
+                    <LSTMFeaturesSection />
                 </section>
                 <section id="parameters">
-                    <LSTMModelParameters/>
+                    <LSTMModelParameters />
                 </section>
                 <section id='preprocessing'>
-                    <LSTMDataPreprocessing/>
+                    <LSTMDataPreprocessing />
                 </section>
                 <section id='trainingProcess'>
-                    <LSTMTrainingProcess/>
+                    <LSTMTrainingProcess />
                 </section>
                 <section id='predictions'>
-                    <LSTMPredictions/>
+                    <LSTMPredictions />
                 </section>
                 <section id='performanceMetrics'>
-                    <ModelPerformanceMetrics/>
+                    <ModelPerformanceMetrics />
                 </section>
                 <section id='practicalApplications'>
-                    <PracticalApplicationsOfLSTMs/>
+                    <PracticalApplicationsOfLSTMs />
                 </section>
                 <Footer />
             </main>
