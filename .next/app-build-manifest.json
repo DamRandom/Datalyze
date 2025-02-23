@@ -11,50 +11,6 @@
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
-    ],
-    "/(page)/algorithms/autoarima/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(page)/algorithms/autoarima/layout.js"
-    ],
-    "/(page)/algorithms/autoarima/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(page)/algorithms/autoarima/page.css",
-      "static/chunks/app/(page)/algorithms/autoarima/page.js"
-    ],
-    "/(page)/algorithms/autoencoders/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(page)/algorithms/autoencoders/layout.js"
-    ],
-    "/(page)/algorithms/autoencoders/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(page)/algorithms/autoencoders/page.css",
-      "static/chunks/app/(page)/algorithms/autoencoders/page.js"
-    ],
-    "/(page)/algorithms/cnn/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(page)/algorithms/cnn/layout.js"
-    ],
-    "/(page)/algorithms/cnn/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(page)/algorithms/cnn/page.css",
-      "static/chunks/app/(page)/algorithms/cnn/page.js"
-    ],
-    "/(page)/algorithms/lstm/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(page)/algorithms/lstm/layout.js"
-    ],
-    "/(page)/algorithms/lstm/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(page)/algorithms/lstm/page.css",
-      "static/chunks/app/(page)/algorithms/lstm/page.js"
     ]
   }
 }

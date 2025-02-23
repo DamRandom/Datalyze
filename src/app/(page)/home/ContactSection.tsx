@@ -1,16 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const ContactSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   useEffect(() => {
     AOS.init();
   }, []);
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); 
+    setIsModalOpen(true); 
+    e.currentTarget.reset(); 
+  };
+
   return (
     <section className="min-h-screen py-12 bg-[#e4e4e4] flex items-center">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center lg:items-start justify-between">
-        {/* Descriptive text */}
+        {/* Texto descriptivo */}
         <div
           className="lg:w-1/2 mb-8 lg:mb-0"
           data-aos="fade-up"
@@ -30,8 +38,9 @@ const ContactSection = () => {
           </p>
         </div>
 
-        {/* Contact form */}
+        {/* Formulario de contacto */}
         <form
+          onSubmit={handleSubmit}
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="400"
@@ -75,6 +84,26 @@ const ContactSection = () => {
           </button>
         </form>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg shadow-lg p-6 w-80 text-center">
+            <h3 className="text-lg font-semibold text-[#1E293B] mb-4">
+              ¡Mensaje enviado!
+            </h3>
+            <p className="text-sm text-[#475569] mb-4">
+              Su mensaje ha sido enviado. Alguien se pondrá en contacto con usted a través del Gmail proporcionado.
+            </p>
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="bg-[#1E293B] text-white px-4 py-2 rounded-lg hover:bg-[#475569] transition-all duration-300"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
