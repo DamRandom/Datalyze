@@ -7,18 +7,18 @@ import "aos/dist/aos.css";
 
 const steps = [
   {
-    title: "Data Analysis",
-    description: `This stage involves collecting, cleaning, and analyzing historical data to understand patterns and trends that affect the performance of predictive models. It ensures high-quality, unbiased data suitable for subsequent tests using advanced statistical tools to interpret information.`,
+    title: "Análisis de Datos",
+    description: `Esta etapa implica recolectar, limpiar y analizar datos históricos para comprender patrones y tendencias que afectan el rendimiento de los modelos predictivos. Asegura datos de alta calidad y sin sesgo, adecuados para pruebas posteriores utilizando herramientas estadísticas avanzadas para interpretar la información.`,
     image: "/images/DataAnalysis.webp",
   },
   {
-    title: "Identifying Differences",
-    description: `In this phase, the Friedman Test is applied, a statistical analysis to determine if significant differences exist in the performance of various predictive models. This test is crucial to validate that results are not merely due to chance and that the models are genuinely distinct in their predictive capabilities.`,
+    title: "Identificación de Diferencias",
+    description: `En esta fase, se aplica la Prueba de Friedman, un análisis estadístico para determinar si existen diferencias significativas en el rendimiento de varios modelos predictivos. Esta prueba es crucial para validar que los resultados no son meramente debido al azar y que los modelos son realmente distintos en sus capacidades predictivas.`,
     image: "/images/IdentifyingDifferences.webp",
   },
   {
-    title: "Detailed Comparisons",
-    description: `After identifying significant differences, a post-hoc test is conducted to make specific comparisons between pairs of models. This test provides deeper insights into interactions, highlighting which models exhibit real, non-random differences, aiding in future decision-making.`,
+    title: "Comparaciones Detalladas",
+    description: `Después de identificar diferencias significativas, se realiza una prueba post-hoc para hacer comparaciones específicas entre pares de modelos. Esta prueba proporciona una visión más profunda de las interacciones, destacando qué modelos presentan diferencias reales y no aleatorias, ayudando en la toma de decisiones futuras.`,
     image: "/images/DetailedComparisons.webp",
   },
 ];
@@ -37,7 +37,7 @@ export default function HowItWorksSection() {
       <div className="max-w-6xl mx-auto">
         {/* Title */}
         <h2 className="text-4xl font-semibold text-center text-[#333] mb-12" data-aos="fade-up">
-          How It Works
+          Cómo Funciona
         </h2>
 
         {/* Steps */}
