@@ -11,6 +11,17 @@
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
+    ],
+    "/(page)/algorithms/autoarima/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(page)/algorithms/autoarima/layout.js"
+    ],
+    "/(page)/algorithms/autoarima/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(page)/algorithms/autoarima/page.css",
+      "static/chunks/app/(page)/algorithms/autoarima/page.js"
     ]
   }
 }

@@ -18,22 +18,22 @@ export default function AdditionalConsiderations() {
             <div className="max-w-4xl mx-auto">
                 {/* Title */}
                 <h2 className="text-4xl font-semibold text-center text-[#333] mb-10" data-aos="fade-up">
-                    Additional Considerations
+                    Consideraciones Adicionales
                 </h2>
 
                 {/* Limitations of the Model */}
                 <div className="mb-8" data-aos="fade-up" data-aos-delay="200">
-                    <h3 className="text-2xl font-medium text-[#444] mb-4">Limitations of the Model</h3>
+                    <h3 className="text-2xl font-medium text-[#444] mb-4">Limitaciones del Modelo</h3>
                     <p className="text-lg text-[#555] mb-6 text-justify">
-                        While ARIMA models are powerful tools for time series forecasting, they have certain limitations. They assume linear relationships within the data, which may not capture complex, nonlinear patterns present in some datasets. Additionally, ARIMA models require a substantial amount of historical data to produce reliable forecasts; with limited data, the model&apos;s performance can degrade significantly. Furthermore, ARIMA may struggle with datasets that exhibit strong seasonal patterns unless extended to Seasonal ARIMA (SARIMA).
+                        Aunque los modelos ARIMA son herramientas poderosas para la predicción de series temporales, tienen ciertas limitaciones. Asumen relaciones lineales dentro de los datos, lo que puede no captar patrones complejos y no lineales presentes en algunos conjuntos de datos. Además, los modelos ARIMA requieren una cantidad sustancial de datos históricos para producir pronósticos fiables; con datos limitados, el rendimiento del modelo puede degradarse significativamente. Además, ARIMA puede tener dificultades con conjuntos de datos que presentan patrones estacionales fuertes, a menos que se amplíe a ARIMA estacional (SARIMA).
                     </p>
                 </div>
 
                 {/* Handling Insufficient Data */}
                 <div className="mb-8" data-aos="fade-up" data-aos-delay="400">
-                    <h3 className="text-2xl font-medium text-[#444] mb-4">Handling Insufficient Data</h3>
+                    <h3 className="text-2xl font-medium text-[#444] mb-4">Manejo de Datos Insuficientes</h3>
                     <p className="text-lg text-[#555] mb-6 text-justify">
-                        In scenarios where data is insufficient, such as columns with few observations or constant values, ARIMA models may not perform optimally. For columns with minimal data, the model might default to simplistic predictions, like using the mean of available observations, which can lead to inaccurate forecasts. Similarly, for columns with constant values, the model may fail to identify meaningful patterns, resulting in predictions that do not reflect potential underlying trends. It&apos;s crucial to assess the adequacy of your data before applying ARIMA models to ensure meaningful and reliable forecasting results.
+                        En escenarios donde los datos son insuficientes, como columnas con pocas observaciones o valores constantes, los modelos ARIMA pueden no rendir de manera óptima. Para columnas con datos mínimos, el modelo podría recurrir a predicciones simplistas, como usar la media de las observaciones disponibles, lo que puede llevar a pronósticos inexactos. De manera similar, para columnas con valores constantes, el modelo puede no identificar patrones significativos, resultando en predicciones que no reflejan tendencias subyacentes potenciales. Es crucial evaluar la adecuación de sus datos antes de aplicar modelos ARIMA para asegurar resultados de pronóstico significativos y fiables.
                     </p>
                 </div>
             </div>

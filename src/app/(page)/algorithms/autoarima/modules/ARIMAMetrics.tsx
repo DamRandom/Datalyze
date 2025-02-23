@@ -18,49 +18,47 @@ export default function ARIMAMetrics() {
             <div className="max-w-4xl mx-auto">
                 {/* Title */}
                 <h2 className="text-4xl font-semibold text-center text-[#333] mb-10" data-aos="fade-up">
-                    Performance Metrics of AutoARIMA
+                    Métricas de Rendimiento de AutoARIMA
                 </h2>
 
                 {/* MSE Section */}
                 <div className="mb-8" data-aos="fade-up">
-                    <h3 className="text-2xl font-medium text-[#444] mb-4">Mean Squared Error (MSE)</h3>
+                    <h3 className="text-2xl font-medium text-[#444] mb-4">Error Cuadrático Medio (MSE)</h3>
                     <p className="text-lg text-[#555] text-justify">
-                        The MSE quantifies the average squared difference between the predicted values and actual observations. 
-                        It is calculated by summing the squared differences and dividing by the total number of observations. 
-                        This metric is sensitive to larger errors, making it particularly useful for detecting outliers. A lower 
-                        MSE indicates better model performance.
+                        El MSE cuantifica la diferencia cuadrada promedio entre los valores predichos y las observaciones reales. 
+                        Se calcula sumando las diferencias cuadradas y dividiendo por el número total de observaciones. 
+                        Esta métrica es sensible a errores más grandes, lo que la hace particularmente útil para detectar atípicos. Un MSE más bajo indica un mejor rendimiento del modelo.
                     </p>
                 </div>
 
                 {/* MAE Section */}
                 <div className="mb-8" data-aos="fade-up">
-                    <h3 className="text-2xl font-medium text-[#444] mb-4">Mean Absolute Error (MAE)</h3>
+                    <h3 className="text-2xl font-medium text-[#444] mb-4">Error Absoluto Medio (MAE)</h3>
                     <p className="text-lg text-[#555] text-justify">
-                        The MAE measures the average magnitude of the absolute differences between the predicted and actual values. 
-                        Unlike MSE, it treats all errors equally without emphasizing larger errors. The MAE provides a clear and 
-                        straightforward measure of model accuracy, where lower values signify improved predictions.
+                        El MAE mide la magnitud promedio de las diferencias absolutas entre los valores predichos y los valores reales. 
+                        A diferencia del MSE, trata todos los errores de manera equitativa sin enfatizar los errores más grandes. El MAE proporciona una medida clara y 
+                        directa de la precisión del modelo, donde valores más bajos significan predicciones mejoradas.
                     </p>
                 </div>
 
                 {/* MAPE Section */}
                 <div className="mb-8" data-aos="fade-up">
-                    <h3 className="text-2xl font-medium text-[#444] mb-4">Mean Absolute Percentage Error (MAPE)</h3>
+                    <h3 className="text-2xl font-medium text-[#444] mb-4">Error Porcentual Absoluto Medio (MAPE)</h3>
                     <p className="text-lg text-[#555] text-justify">
-                        The MAPE calculates the average percentage error between the predicted and actual values. It is computed by 
-                        dividing the absolute error by the actual values, averaging the results, and multiplying by 100 to express 
-                        it as a percentage. This metric is particularly intuitive for understanding error relative to the scale of 
-                        the data, although caution is needed when actual values approach zero.
+                        El MAPE calcula el error porcentual promedio entre los valores predichos y los valores reales. Se calcula dividiendo 
+                        el error absoluto por los valores reales, promediando los resultados y multiplicando por 100 para expresarlo como un porcentaje. 
+                        Esta métrica es particularmente intuitiva para entender el error en relación con la escala de los datos, aunque se necesita precaución cuando los valores reales se acercan a cero.
                     </p>
                 </div>
 
                 {/* General Considerations */}
                 <div className="mb-8" data-aos="fade-up">
-                    <h3 className="text-2xl font-medium text-[#444] mb-4">General Considerations</h3>
+                    <h3 className="text-2xl font-medium text-[#444] mb-4">Consideraciones Generales</h3>
                     <p className="text-lg text-[#555] text-justify">
-                        These metrics are essential for evaluating the accuracy of time series models like AutoARIMA. Each metric 
-                        provides unique insights: MSE highlights the impact of large errors, MAE offers a direct measurement of 
-                        average accuracy, and MAPE allows for relative error interpretation. Selecting the appropriate metric 
-                        depends on the dataset&apos;s characteristics and the goals of the analysis.
+                        Estas métricas son esenciales para evaluar la precisión de modelos de series temporales como AutoARIMA. Cada métrica 
+                        proporciona perspectivas únicas: el MSE resalta el impacto de errores grandes, el MAE ofrece una medida directa de 
+                        precisión promedio y el MAPE permite la interpretación del error relativo. La selección de la métrica adecuada 
+                        depende de las características del conjunto de datos y los objetivos del análisis.
                     </p>
                 </div>
             </div>

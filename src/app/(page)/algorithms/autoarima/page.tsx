@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import NavBar from "@/components/common/NavBar";
 import Footer from "@/components/common/Footer";
 import AutoARIMAIntroduction from "./modules/AutoARIMAIntroduction";
@@ -13,12 +12,12 @@ import AdditionalConsiderations from "./modules/AdditionalConsiderations";
 
 const CNNPage: React.FC = () => {
     const sections = [
-        { id: "introduction", label: "Introduction" },
-        { id: "hyperparameters", label: "Hyperparameters" },
-        { id: "modelfitting", label: "Model Fitting" },
-        { id: "metrics", label: "Metrics" },
-        { id: "prediction", label: "ModelPredictionOutput" },
-        { id: "considerations", label: "Additional Considerations" },
+        { id: "introduction", label: "Introducción" },
+        { id: "hyperparameters", label: "Hiperparámetros" },
+        { id: "modelfitting", label: "Ajuste del Modelo" },
+        { id: "metrics", label: "Métricas" },
+        { id: "prediction", label: "Salida de Predicción del Modelo" },
+        { id: "considerations", label: "Consideraciones Adicionales" },
     ];
 
     return (

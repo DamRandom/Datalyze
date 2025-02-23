@@ -18,49 +18,49 @@ export default function ARIMAFormula() {
             <div className="max-w-4xl mx-auto">
                 {/* Title */}
                 <h2 className="text-4xl font-semibold text-center text-[#333] mb-10" data-aos="fade-up">
-                    ARIMA Model Formula and Parameters
+                    Fórmula y Parámetros del Modelo ARIMA
                 </h2>
 
                 {/* Formula Section */}
-                <h3 className="text-2xl font-medium text-[#444] mb-4">Model Formula</h3>
+                <h3 className="text-2xl font-medium text-[#444] mb-4">Fórmula del Modelo</h3>
                 <p className="text-lg text-[#555] mb-6 text-justify">
-                    The ARIMA model is represented by a mathematical formula that combines autoregressive, integrated, and moving average components. 
-                    The general structure of the formula involves forecasting future values based on past observations, differenced data to achieve stationarity, 
-                    and past errors. This formula helps in creating predictions by accounting for both trends and the randomness in the data.
+                    El modelo ARIMA se representa mediante una fórmula matemática que combina componentes autorregresivos, integrados y de media móvil. 
+                    La estructura general de la fórmula implica pronosticar valores futuros basándose en observaciones pasadas, datos diferenciales para lograr estacionariedad, 
+                    y errores pasados. Esta fórmula ayuda a crear predicciones al tener en cuenta tanto las tendencias como la aleatoriedad en los datos.
                 </p>
                 
                 {/* Explanation of Parameters */}
                 <div className="mb-8">
                     <h3 className="text-2xl font-medium text-[#444] mb-4" data-aos="fade-up">
-                        Explanation of Parameters
+                        Explicación de los Parámetros
                     </h3>
                     <p className="text-lg text-[#555] mb-6 text-justify" data-aos="fade-up" data-aos-delay="200">
-                        The ARIMA model consists of three main components:
+                        El modelo ARIMA consta de tres componentes principales:
                     </p>
                     <ul className="text-lg text-[#555] mb-6 pl-4 list-disc" data-aos="fade-up" data-aos-delay="400">
                         <li>
-                            <strong>AR (AutoRegressive):</strong> Reflects the impact of previous values in the time series on the current value. This is controlled by the <em>p</em> parameter.
+                            <strong>AR (Autorregresivo):</strong> Refleja el impacto de los valores anteriores en la serie temporal sobre el valor actual. Esto se controla mediante el parámetro <em>p</em>.
                         </li>
                         <li>
-                            <strong>I (Integrated):</strong> Represents the number of differencing operations applied to the data to make it stationary, controlled by the <em>d</em> parameter.
+                            <strong>I (Integrado):</strong> Representa el número de operaciones de diferenciación aplicadas a los datos para hacerlos estacionarios, controlado por el parámetro <em>d</em>.
                         </li>
                         <li>
-                            <strong>MA (Moving Average):</strong> Accounts for the relationship between past forecast errors and current values, controlled by the <em>q</em> parameter.
+                            <strong>MA (Media Móvil):</strong> Tiene en cuenta la relación entre los errores de pronóstico pasados y los valores actuales, controlada por el parámetro <em>q</em>.
                         </li>
                     </ul>
                     <p className="text-lg text-[#555] text-justify" data-aos="fade-up" data-aos-delay="600">
-                        These parameters are adjusted according to the data&apos;s behavior. The <em>p</em> parameter is often adjusted based on the autocorrelation present, 
-                        while the <em>d</em> parameter is used to achieve stationarity in the data, and the <em>q</em> parameter is set based on the forecast errors observed.
+                        Estos parámetros se ajustan según el comportamiento de los datos. El parámetro <em>p</em> se ajusta a menudo en función de la autocorrelación presente, 
+                        mientras que el parámetro <em>d</em> se utiliza para lograr la estacionariedad en los datos, y el parámetro <em>q</em> se establece según los errores de pronóstico observados.
                     </p>
                 </div>
 
                 {/* Key Takeaways */}
                 <div className="mb-8" data-aos="fade-up" data-aos-delay="800">
-                    <h3 className="text-2xl font-medium text-[#444] mb-4">Key Insights</h3>
+                    <h3 className="text-2xl font-medium text-[#444] mb-4">Conclusiones Clave</h3>
                     <p className="text-lg text-[#555] text-justify">
-                        The ARIMA model is a powerful tool for time series forecasting, as it can capture various patterns such as trends and seasonality. 
-                        By carefully selecting appropriate values for the parameters <em>p</em>, <em>d</em>, and <em>q</em>, the model can be fine-tuned to effectively 
-                        predict future values and adapt to different types of time series data.
+                        El modelo ARIMA es una herramienta poderosa para la predicción de series temporales, ya que puede captar varios patrones como tendencias y estacionalidad. 
+                        Al seleccionar cuidadosamente valores apropiados para los parámetros <em>p</em>, <em>d</em> y <em>q</em>, el modelo puede ser ajustado de manera efectiva 
+                        para predecir valores futuros y adaptarse a diferentes tipos de datos de series temporales.
                     </p>
                 </div>
             </div>

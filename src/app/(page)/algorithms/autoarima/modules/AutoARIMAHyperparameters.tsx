@@ -18,13 +18,17 @@ export default function AutoARIMAHyperparameters() {
             <div className="max-w-4xl mx-auto">
                 {/* Title */}
                 <h2 className="text-4xl font-semibold text-center text-[#333] mb-10" data-aos="fade-up">
-                    AutoARIMA Hyperparameters
+                    Hiperparámetros de AutoARIMA
                 </h2>
 
                 {/* General Description of Hyperparameters */}
                 <div className="mb-4">
                     <p className="text-lg text-[#555] text-justify">
-                        Hyperparameters in the AutoARIMA model are crucial for controlling the model’s complexity and behavior. By adjusting these settings, the model can be fine-tuned to effectively handle different time series patterns, such as seasonality, trend, and noise. The configuration of these parameters directly affects the model’s performance, accuracy, and stability. Properly tuning them according to the dataset’s characteristics is essential for improving the model’s ability to detect underlying patterns and make accurate predictions.
+                        Los hiperparámetros en el modelo AutoARIMA son cruciales para controlar la complejidad y el comportamiento del modelo. 
+                        Al ajustar estas configuraciones, el modelo puede ser optimizado para manejar efectivamente diferentes patrones de series temporales, 
+                        como la estacionalidad, la tendencia y el ruido. La configuración de estos parámetros afecta directamente el rendimiento, la 
+                        precisión y la estabilidad del modelo. Ajustarlos adecuadamente según las características del conjunto de datos es esencial 
+                        para mejorar la capacidad del modelo para detectar patrones subyacentes y realizar predicciones precisas.
                     </p>
                 </div>
             </div>
