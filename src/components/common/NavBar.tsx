@@ -22,7 +22,7 @@ const NavBar: React.FC<NavBarProps> = ({ sections }) => {
           Datalyze
         </a>
 
-        {/* Mobile Menu Button */}
+        {/* Botón de menú móvil */}
         <button
           className="md:hidden text-white focus:outline-none"
           onClick={toggleMenu}
@@ -43,7 +43,7 @@ const NavBar: React.FC<NavBarProps> = ({ sections }) => {
           </svg>
         </button>
 
-        {/* Navigation Links */}
+        {/* Enlaces de navegación */}
         <div
           className={`absolute top-[64px] left-0 w-full bg-[#1E293B] md:bg-transparent md:static md:flex md:space-x-6 md:top-0 md:w-auto ${
             isMenuOpen ? "block" : "hidden"
@@ -56,7 +56,7 @@ const NavBar: React.FC<NavBarProps> = ({ sections }) => {
               className="relative block px-6 py-4 md:inline-block md:p-0 text-white hover:text-[#93C5FD] transition-colors duration-300 
                 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#93C5FD] 
                 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
-              onClick={() => setIsMenuOpen(false)} // Close menu on link click
+              onClick={() => setIsMenuOpen(false)} 
             >
               {section.label}
             </a>

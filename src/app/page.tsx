@@ -10,11 +10,11 @@ import Footer from "@/components/common/Footer";
 
 export default function HomePage() {
   const sections = [
-    { id: "upload", label: "Upload" },
-    { id: "how-it-works", label: "How It Works" },
-    { id: "algorithms", label: "Algorithms" },
-    { id: "examples", label: "Examples" },
-    { id: "contact", label: "Contact" },
+    { id: "upload", label: "Subir" }, 
+    { id: "how-it-works", label: "Cómo Funciona" },
+    { id: "algorithms", label: "Algoritmos" }, 
+    { id: "examples", label: "Ejemplos" }, 
+    { id: "contact", label: "Contacto" }, 
   ];
 
   return (
