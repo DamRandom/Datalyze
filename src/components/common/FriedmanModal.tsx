@@ -25,7 +25,7 @@ const FriedmanModal: React.FC<FriedmanModalProps> = ({ isOpen, onClose }) => {
       {
         label: "MSE (Error Cuadrático Medio)",
         data: mseValues,
-        backgroundColor: ["#2563EB", "#60A5FA", "#93C5FD", "#BFDBFE"],
+        backgroundColor: ["#1E293B", "#1e2d44", "#142746", "#11213b"],
         borderWidth: 1,
       },
     ],
@@ -43,18 +43,18 @@ const FriedmanModal: React.FC<FriedmanModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white rounded-lg shadow-lg w-full max-w-lg p-6">
+      <div className="bg-[#FFFFFF] rounded-lg shadow-lg w-full max-w-lg p-6">
         {/* Título */}
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
+        <h2 className="text-2xl font-semibold text-[#1E293B] mb-4 text-center">
           Análisis del Test de Friedman
         </h2>
 
         {/* Datos clave */}
         <div className="mb-4 text-center">
-          <p className="text-gray-700">
+          <p className="text-[#444444]">
             <strong>P-valor:</strong> {pValue}
           </p>
-          <p className="text-gray-700">
+          <p className="text-[#444444]">
             <strong>Estadístico:</strong> {statistic}
           </p>
         </div>
@@ -65,7 +65,7 @@ const FriedmanModal: React.FC<FriedmanModalProps> = ({ isOpen, onClose }) => {
         </div>
 
         {/* Conclusión */}
-        <p className="text-gray-600 text-center">
+        <p className="text-[#444444] text-justify">
           No hay diferencias significativas entre los modelos en términos de
           error cuadrático medio (MSE). Los cuatro modelos tienen desempeños
           similares según esta prueba.
@@ -75,7 +75,7 @@ const FriedmanModal: React.FC<FriedmanModalProps> = ({ isOpen, onClose }) => {
         <div className="mt-6 flex justify-center">
           <button
             onClick={onClose}
-            className="bg-[#2563EB] hover:bg-[#1E40AF] text-white py-2 px-4 rounded-lg transition-all"
+            className="bg-[#1E293B] hover:bg-[#11213b] text-white py-2 px-4 rounded-lg transition-all"
           >
             Cerrar
           </button>

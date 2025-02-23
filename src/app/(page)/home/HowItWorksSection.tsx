@@ -65,7 +65,7 @@ export default function HowItWorksSection() {
 
               {/* Step Description */}
               <div className="md:w-1/2 px-6">
-                <h3 className="text-2xl font-medium text-[#444] mb-4 text-center md:text-left">
+                <h3 className="text-2xl font-medium text-[#444444] mb-4 text-center md:text-left">
                   {step.title}
                 </h3>
                 <p className="text-lg text-[#555] leading-relaxed text-justify">

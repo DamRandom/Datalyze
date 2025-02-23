@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import FriedmanModal from "../../../components/common/FriedmanModal"; // Asegúrate de importar el modal
+import FriedmanModal from "../../../components/common/FriedmanModal"; 
 
 const UploadSection = () => {
   const [file, setFile] = useState<File | null>(null);
@@ -107,8 +107,8 @@ const UploadSection = () => {
       {isProcessing && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
           <div className="flex flex-col items-center">
-            <div className="loader"></div> {/* Aquí puedes añadir un spinner CSS */}
-            <p className="text-white mt-4">{currentMessage}</p>
+            <div className="loader mb-4"></div> {/* Aquí puedes añadir un spinner CSS con margen inferior */}
+            <p className="text-white">{currentMessage}</p>
           </div>
         </div>
       )}
