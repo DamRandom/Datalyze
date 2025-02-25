@@ -37,18 +37,18 @@ const ExampleResultsSection: React.FC = () => {
   return (
     <div className="my-8 p-6 bg-white rounded-lg">
       <h2 className="text-2xl font-semibold text-[#1E293B] mb-4 text-center">
-        Example of Results Visualization
+        Ejemplo de Visualización de Resultados
       </h2>
       <p className="text-[#444444] text-justify mb-4">
-        Below is an example of the visualization of the results obtained in the Friedman Test analysis. This graph shows the Mean Squared Error (MSE) values for four different models, represented on the horizontal axis. The vertical axis indicates the MSE value, where it can be observed that all models have relatively similar results. This analysis helps evaluate the effectiveness of each model based on MSE, providing a clear view of their performance.
+        A continuación se muestra un ejemplo de la visualización de los resultados obtenidos en el análisis de la Prueba de Friedman. Este gráfico muestra los valores del Error Cuadrático Medio (MSE) para cuatro modelos diferentes, representados en el eje horizontal. El eje vertical indica el valor del MSE, donde se puede observar que todos los modelos tienen resultados relativamente similares. Este análisis ayuda a evaluar la efectividad de cada modelo en función del MSE, proporcionando una visión clara de su rendimiento.
       </p>
 
       <div className="mb-4 text-center">
         <p className="text-[#444444]">
-          <strong>P-value:</strong> {pValue}
+          <strong>Valor-P:</strong> {pValue}
         </p>
         <p className="text-[#444444]">
-          <strong>Statistic:</strong> {statistic}
+          <strong>Estadística:</strong> {statistic}
         </p>
       </div>
 
@@ -59,7 +59,7 @@ const ExampleResultsSection: React.FC = () => {
 
       {/* Conclusion */}
       <p className="text-[#444444] text-justify">
-        There are no significant differences between the models in terms of Mean Squared Error (MSE). All four models have similar performances according to this test.
+        No hay diferencias significativas entre los modelos en términos de Error Cuadrático Medio (MSE). Los cuatro modelos tienen un rendimiento similar según esta prueba.
       </p>
     </div>
   );
