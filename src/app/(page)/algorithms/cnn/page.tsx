@@ -7,8 +7,8 @@ import CNNEvaluation from "./modules/CNNEvaluation";
 import CNNArchitectures from "./modules/CNNArchitectures";
 import CNNApplications from "./modules/CNNApplications";
 import CNNAdvantagesDisadvantages from "./modules/CNNAdvantagesDisadvantages";
-import NavBar from "@/components/common/NavBar";
-import Footer from "@/components/common/Footer";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const CNNPage: React.FC = () => {
   const sections = [

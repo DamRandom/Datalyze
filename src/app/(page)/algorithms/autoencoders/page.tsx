@@ -1,7 +1,7 @@
 import React from "react";
 
-import NavBar from "@/components/common/NavBar";
-import Footer from "@/components/common/Footer";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 import AutoencodersInfo from "./modules/AutoencodersInfo";
 import AutoencodersArchitecture from "./modules/AutoencodersArchitecture";
 import AutoencodersTypes from "./modules/AutoencodersTypes";

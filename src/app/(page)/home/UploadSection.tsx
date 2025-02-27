@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import FriedmanModal from "../../../components/common/FriedmanModal";
+import FriedmanModal from "../../../components/FriedmanModal";
 
 const UploadSection = () => {
   const [file, setFile] = useState<File | null>(null);

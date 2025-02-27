@@ -1,9 +1,9 @@
 "use client";
 
-import NavBar from "@/components/common/NavBar";
+import NavBar from "@/components/NavBar";
 import LSTMIntroduction from "./modules/LSTMIntroduction";
 import LSTMFeaturesSection from "./modules/LSTMFeatures";
-import Footer from "@/components/common/Footer";
+import Footer from "@/components/Footer";
 import LSTMModelParameters from "./modules/LSTMModelParameters";
 import LSTMDataPreprocessing from "./modules/LSTMDataPreprocessing";
 import LSTMTrainingProcess from "./modules/LSTMTrainingProcess";

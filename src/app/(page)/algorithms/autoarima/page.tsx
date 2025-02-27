@@ -1,7 +1,7 @@
 import React from "react";
 
-import NavBar from "@/components/common/NavBar";
-import Footer from "@/components/common/Footer";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 import AutoARIMAIntroduction from "./modules/AutoARIMAIntroduction";
 import AutoARIMAFormula from "./modules/ARIMAFormula";
 import AutoARIMAHyperparameters from "./modules/AutoARIMAHyperparameters";

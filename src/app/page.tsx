@@ -1,12 +1,12 @@
 "use client";
 
-import NavBar from "@/components/common/NavBar";
+import NavBar from "@/components/NavBar";
 import UploadSection from "@/app/(page)/home/UploadSection";
 import HowItWorksSection from "@/app/(page)/home/HowItWorksSection";
 import AlgorithmSection from "@/app/(page)/home/AlgorithmSection";
 import ExampleResultSection from "@/app/(page)/home/ExampleResultSection";
 import ContactSection from "@/app/(page)/home/ContactSection";
-import Footer from "@/components/common/Footer";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   const sections = [
