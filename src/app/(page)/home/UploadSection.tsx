@@ -129,8 +129,7 @@ const UploadSection = () => {
       <FriedmanModal isOpen={isFriedmanModalOpen} onClose={() => setIsFriedmanModalOpen(false)} />
 
       {/* Modal de error */}
-      <ErrorModal isOpen={isErrorModalOpen} onClose={() => setIsErrorModalOpen(false)}>
-      </ErrorModal>
+      <ErrorModal isOpen={isErrorModalOpen} onClose={() => setIsErrorModalOpen(false)} />
     </section>
   );
 };
