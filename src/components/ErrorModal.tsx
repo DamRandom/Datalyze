@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion"; // Asegúrate de instalar framer-motion
+import { motion } from "framer-motion";
 
 interface ErrorModalProps {
   isOpen: boolean;
@@ -21,23 +21,23 @@ const ErrorModal: React.FC<ErrorModalProps> = ({ isOpen, onClose, children }) =>
         transition={{ duration: 0.3 }}
       >
         <Image
-          src="/images/Pipeline maintenance-rafiki.png" // Cambia la ruta a la imagen que desees usar
+          src="/images/Pipeline maintenance-rafiki.png" 
           alt="Error"
-          width={200} // Aumenta el tamaño de la imagen
+          width={200} 
           height={200}
-          className="mb-4" // Mantiene el margen en la parte inferior
+          className="mb-4"
         />
-        <h2 className="text-2xl font-semibold text-[#1E293B] mb-2"> {/* Aumentado el tamaño del texto */}
-          Formato no compatible
+        <h2 className="text-2xl font-semibold text-[#1E293B] mb-2">
+          Format not supported
         </h2>
-        <p className="text-gray-700 text-base mb-4"> {/* Aumentado el tamaño del texto */}
-          Aún no trabajamos con ese formato. Actualmente solo aceptamos archivos en formato CSV, Excel o JSON.
+        <p className="text-gray-700 text-base mb-4">
+          We do not support that format yet. Currently, we only accept files in CSV, Excel, or JSON format.
         </p>
         <button
-          className="mt-4 px-4 py-2 bg-[#1E293B] text-white rounded-lg" // Cambiado a color 1E293B
+          className="mt-4 px-4 py-2 bg-[#1E293B] text-white rounded-lg"
           onClick={onClose}
         >
-          Cerrar
+          Close
         </button>
         {children}
       </motion.div>

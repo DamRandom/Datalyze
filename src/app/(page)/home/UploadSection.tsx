@@ -5,7 +5,7 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import FriedmanModal from "../../../components/FriedmanModal";
-import ErrorModal from "../../../components/ErrorModal"; // Nuevo modal de error
+import ErrorModal from "../../../components/ErrorModal"; 
 
 const UploadSection = () => {
   const [file, setFile] = useState<File | null>(null);
