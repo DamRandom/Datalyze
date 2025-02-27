@@ -5,13 +5,15 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import FriedmanModal from "../../../components/FriedmanModal";
+import ErrorModal from "../../../components/ErrorModal"; // Nuevo modal de error
 
 const UploadSection = () => {
   const [file, setFile] = useState<File | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [currentMessage, setCurrentMessage] = useState("");
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  
+  const [isFriedmanModalOpen, setIsFriedmanModalOpen] = useState(false);
+  const [isErrorModalOpen, setIsErrorModalOpen] = useState(false);
+
   const processingMessages = [
     "Limpiando datos...",
     "Analizando datos...",
@@ -24,6 +26,8 @@ const UploadSection = () => {
     AOS.init(); 
   }, []);
 
+  const validExtensions = ["csv", "xls", "xlsx", "json"];
+
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
   };
@@ -31,12 +35,20 @@ const UploadSection = () => {
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      setFile(e.dataTransfer.files[0]);
-      console.log("Archivo recibido:", e.dataTransfer.files[0]);
+      const uploadedFile = e.dataTransfer.files[0];
+      const fileExtension = uploadedFile.name.split(".").pop()?.toLowerCase();
+
+      if (fileExtension && validExtensions.includes(fileExtension)) {
+        setFile(uploadedFile);
+      } else {
+        setIsErrorModalOpen(true);
+      }
     }
   };
 
   const handleProcess = () => {
+    if (!file) return;
+    
     setIsProcessing(true);
     let index = 0;
 
@@ -48,7 +60,7 @@ const UploadSection = () => {
         clearInterval(interval);
         setTimeout(() => {
           setIsProcessing(false);
-          setIsModalOpen(true);
+          setIsFriedmanModalOpen(true);
         }, 500);
       }
     }, 1000); 
@@ -113,8 +125,12 @@ const UploadSection = () => {
         </div>
       )}
 
-      {/* Modal */}
-      <FriedmanModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      {/* Modal de procesamiento */}
+      <FriedmanModal isOpen={isFriedmanModalOpen} onClose={() => setIsFriedmanModalOpen(false)} />
+
+      {/* Modal de error */}
+      <ErrorModal isOpen={isErrorModalOpen} onClose={() => setIsErrorModalOpen(false)}>
+      </ErrorModal>
     </section>
   );
 };
