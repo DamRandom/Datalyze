@@ -14,6 +14,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Aquí agregas el link al favicon */}
+        <link
+          rel="icon"
+          type="image/png"
+          href="/images/icons/favicon.png"
+        />
+      </head>
       <body className="antialiased bg-gray-50 text-gray-900 font-sans">
         {children}
       </body>
